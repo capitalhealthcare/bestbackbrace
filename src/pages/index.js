@@ -1,47 +1,45 @@
 import { useSelector } from "react-redux";
 import { getProducts } from "../lib/product";
-import { LayoutOne } from "../layouts";
-import { HeroSliderOne } from "../components/HeroSlider";
-import { BannerOne, BannerTwo } from "../components/Banner";
-import { ProductTab } from "../components/ProductTab";
-import { ProductSliderOne } from "../components/ProductSlider";
+import { LayoutFour } from "../layouts";
+import { HeroSliderFour } from "../components/HeroSlider";
+import { IconBoxThree } from "../components/IconBox";
+
+import { CategorySliderOne } from "../components/CategorySlider";
+import { ProductGridTwo } from "../components/ProductGrid";
+import { CountdownOne } from "../components/Countdown";
+import { ProductSliderSeven } from "../components/ProductSlider";
+import { BlogGrid } from "../components/Blog";
 import { TestimonialOne } from "../components/Testimonial";
-import { IconBoxOne } from "../components/IconBox";
+import { ImageSliderOne } from "../components/ImageSlider";
 
-import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
+import imageSliderData from "../data/image-sliders/image-slider-one.json";
 import testimonialOneData from "../data/testimonials/testimonial-one.json";
+import heroSliderFourData from "../data/hero-sliders/hero-slider-four.json";
 
-const FashionOne = () => {
+const FurnitureTwo = () => {
   const { products } = useSelector((state) => state.product);
-  const featuredProducts = getProducts(products, "fashion", "featured", 8);
-  const newProducts = getProducts(products, "fashion", "new", 8);
-  const bestSellerProducts = getProducts(products, "fashion", "popular", 8);
-  const saleProducts = getProducts(products, "fashion", "sale", 8);
+  const bestSellerProducts = getProducts(products, "furniture", "popular", 8);
 
   return (
-    <LayoutOne>
+    <LayoutFour navPositionClass="justify-content-center">
       {/* hero slider */}
-      <HeroSliderOne heroSliderData={heroSliderOneData} />
-      {/* double banner */}
-      <BannerTwo />
-      {/* tab product */}
-      <ProductTab
-        title="Exclusive Products"
-        newProducts={newProducts}
-        bestSellerProducts={bestSellerProducts}
-        featuredProducts={featuredProducts}
-        saleProducts={saleProducts}
+      <HeroSliderFour heroSliderData={heroSliderFourData} />
+      {/* Top Products */}
+      <ProductGridTwo
+        title="Our Top Products"
+        text="Discover our elite range of back braces, meticulously crafted for unparalleled support. Choose BestBackBrace for comfort that stands the test of time"
+        products={bestSellerProducts}
       />
-      {/* single banner */}
-      <BannerOne />
-      {/* product slider */}
-      <ProductSliderOne title="Featured Products" products={featuredProducts} />
+      {/* image slider */}
+      <ImageSliderOne imageSliderData={imageSliderData} />
+      {/* icon box */}
+      <IconBoxThree />
       {/* testimonial */}
       <TestimonialOne testimonialData={testimonialOneData} />
-      {/* icon box */}
-      <IconBoxOne />
-    </LayoutOne>
+      {/* blog grid */}
+      <BlogGrid />
+    </LayoutFour>
   );
 };
 
-export default FashionOne;
+export default FurnitureTwo;

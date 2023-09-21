@@ -3,6 +3,7 @@ import clsx from "clsx";
 import MobileMenuSearch from "./MobileMenuSearch";
 import MobileMenuNav from "./MobileMenuNav";
 import MobileMenuWidgets from "./MobileMenuWidgets";
+import Link from "next/link";
 
 const MobileMenu = ({ activeStatus, getActiveStatus }) => {
   return (
@@ -18,36 +19,18 @@ const MobileMenu = ({ activeStatus, getActiveStatus }) => {
         >
           <IoIosClose />
         </button>
-        <div className="offcanvas-mobile-menu__content-wrapper">
-          <div className="offcanvas-mobile-menu__content">
-            {/* mobile search */}
-            <MobileMenuSearch />
-
+        <div className="offcanvas-mobile-menu__content-wrapper px-3">
+          {/* <div className="pt-2 ps-4 bg-dark"> */}
             {/* mobile nav menu */}
             <MobileMenuNav getActiveStatus={getActiveStatus} />
-
-            <div className="offcanvas-mobile-menu__middle space-mb--30">
-              <div className="lang-curr-style space-mb--20">
-                <span className="title">Choose Language </span>
-                <select>
-                  <option value="en">English</option>
-                  <option value="fn">French</option>
-                  <option value="de">Germany</option>
-                </select>
-              </div>
-              <div className="lang-curr-style">
-                <span className="title">Choose Currency</span>
-                <select>
-                  <option value="USD">USD</option>
-                  <option value="EUR">EUR</option>
-                  <option value="GBP">GBP</option>
-                </select>
-              </div>
+            {/* mobile nav Image */}
+            <div>
+              <img
+                src="/assets/images/hero-slider/four/img.jpg"
+                alt="shop_banner"
+              />
             </div>
-
-            {/* mobile widgets */}
-            <MobileMenuWidgets />
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

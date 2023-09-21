@@ -14,9 +14,8 @@ const HeaderThree = ({ navPositionClass }) => {
   const [scroll, setScroll] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [offCanvasSearchActive, setOffCanvasSearchActive] = useState(false);
-  const [offCanvasMobileMenuActive, setOffCanvasMobileMenuActive] = useState(
-    false
-  );
+  const [offCanvasMobileMenuActive, setOffCanvasMobileMenuActive] =
+    useState(false);
   const { cartItems } = useSelector((state) => state.cart);
 
   useEffect(() => {
@@ -33,13 +32,17 @@ const HeaderThree = ({ navPositionClass }) => {
   };
 
   return (
-    <header className={clsx("header-wrap header-wrap--transparent", scroll > headerHeight && "is-sticky")}>
+    <header
+      className={clsx(
+        "header-wrap header-wrap--transparent",
+        scroll > headerHeight && "is-sticky"
+      )}
+    >
       <div className="bottom-header light-skin light-skin--style-two">
         <Container>
           <div className="bottom-header-container d-flex justify-content-between align-items-center position-relative">
             {/* logo */}
             <Link href="/" className="navbar-brand">
-
               <img
                 className="logo-light"
                 src="/assets/images/logo_light.png"
@@ -50,7 +53,6 @@ const HeaderThree = ({ navPositionClass }) => {
                 src="/assets/images/logo_dark.png"
                 alt="logo"
               />
-
             </Link>
 
             {/* navigation */}
@@ -58,7 +60,7 @@ const HeaderThree = ({ navPositionClass }) => {
 
             {/* icons */}
             <ul className="header-icons d-flex">
-              <li className="d-none d-lg-block">
+              {/* <li className="d-none d-lg-block">
                 <button
                   className="nav-link search-trigger"
                   onClick={() => {
@@ -67,26 +69,29 @@ const HeaderThree = ({ navPositionClass }) => {
                 >
                   <IoIosSearch />
                 </button>
-              </li>
+              </li> */}
 
               <li className="d-none d-lg-block position-relative">
-                <Link href="/other/cart" className="nav-link mini-cart-trigger pe-3 pe-lg-0">
-
+                <Link
+                  href="/other/cart"
+                  className="nav-link mini-cart-trigger pe-3 pe-lg-0"
+                >
                   <AiOutlineShoppingCart />
                   {cartItems.length > 0 ? (
                     <span className="cart-count">{cartItems.length}</span>
                   ) : (
                     ""
                   )}
-
                 </Link>
                 {/* mini cart */}
                 <MiniCart cartItems={cartItems} />
               </li>
 
               <li className="d-block d-lg-none position-relative">
-                <Link href="/other/cart" className="nav-link mini-cart-trigger pe-3 pe-lg-0">
-
+                <Link
+                  href="/other/cart"
+                  className="nav-link mini-cart-trigger pe-3 pe-lg-0"
+                >
                   <AiOutlineShoppingCart />
                   {cartItems.length > 0 ? (
                     <span className="cart-count cart-count--mobile">
@@ -95,7 +100,6 @@ const HeaderThree = ({ navPositionClass }) => {
                   ) : (
                     ""
                   )}
-
                 </Link>
               </li>
               <li className="d-block d-lg-none">

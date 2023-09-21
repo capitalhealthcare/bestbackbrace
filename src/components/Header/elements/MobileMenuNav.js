@@ -6,9 +6,8 @@ const MobileMenuNav = ({ getActiveStatus }) => {
     const offCanvasNav = document.querySelector(
       "#offcanvas-mobile-menu__navigation"
     );
-    const offCanvasNavSubMenu = offCanvasNav.querySelectorAll(
-      ".mobile-sub-menu"
-    );
+    const offCanvasNavSubMenu =
+      offCanvasNav.querySelectorAll(".mobile-sub-menu");
     const anchorLinks = offCanvasNav.querySelectorAll("a");
 
     for (let i = 0; i < offCanvasNavSubMenu.length; i++) {
@@ -43,420 +42,40 @@ const MobileMenuNav = ({ getActiveStatus }) => {
       id="offcanvas-mobile-menu__navigation"
     >
       <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+
         <li className="menu-item-has-children">
-          <Link href="/">
-            Home
-          </Link>
+          <Link href="/shop/grid-left-sidebar">Products</Link>
           <ul className="mobile-sub-menu">
-            <li>
-              <Link href="/home/fashion-one">
-                Fashion Home One
-              </Link>
-            </li>
-            <li>
-              <Link href="/home/fashion-two">
-                Fashion Home Two
-              </Link>
-            </li>
-            <li>
-              <Link href="/home/furniture-one">
-                Furniture Home One
-              </Link>
-            </li>
-            <li>
-              <Link href="/home/furniture-two">
-                Furniture Home Two
-              </Link>
-            </li>
-            <li>
-              <Link href="/home/electronics-one">
-                Electronics Home One
-              </Link>
-            </li>
-            <li>
-              <Link href="/home/electronics-two">
-                Electronics Home Two
-              </Link>
+            <li className="menu-item-has-children">
+              <Link href="/shop/grid-left-sidebar">Backbraces</Link>
             </li>
           </ul>
         </li>
 
         <li className="menu-item-has-children">
-          <Link href="/shop/grid-left-sidebar">
-            Shop
-          </Link>
-          <ul className="mobile-sub-menu">
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Shop Page Layout
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/shop/grid-left-sidebar">
-                    Grid Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/grid-right-sidebar">
-                    Grid Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/list-left-sidebar">
-                    List Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/list-right-sidebar">
-                    List Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/list-no-sidebar">
-                    List No Sidebar
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Other Pages
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/other/cart">
-                    Cart
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/checkout">
-                    Checkout
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/my-account">
-                    My Account
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/wishlist">
-                    Wishlist
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/compare">
-                    Compare
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/order-completed">
-                    Order Completed
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Product Pages
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/shop/product-basic/lorem-ipsum-fashion-eight">
-                    Default
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-left-sidebar/lorem-ipsum-fashion-eight">
-                    Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-right-sidebar/lorem-ipsum-fashion-eight">
-                    Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-thumb-left/lorem-ipsum-fashion-eight">
-                    Thumb Left
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li className="menu-item-has-children">
-          <Link href="/shop/grid-left-sidebar">
-            Products
-          </Link>
-          <ul className="mobile-sub-menu">
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Shop Page Layout
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/shop/grid-left-sidebar">
-                    Grid Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/grid-right-sidebar">
-                    Grid Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/list-left-sidebar">
-                    List Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/list-right-sidebar">
-                    List Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/list-no-sidebar">
-                    List No Sidebar
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Other Pages
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/other/cart">
-                    Cart
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/checkout">
-                    Checkout
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/my-account">
-                    My Account
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/wishlist">
-                    Wishlist
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/compare">
-                    Compare
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/other/order-completed">
-                    Order Completed
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Product Pages
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/shop/product-basic/lorem-ipsum-fashion-eight">
-                    Default
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-left-sidebar/lorem-ipsum-fashion-eight">
-                    Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-right-sidebar/lorem-ipsum-fashion-eight">
-                    Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-thumb-left/lorem-ipsum-fashion-eight">
-                    Thumb Left
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">
-                Product Pages
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/shop/product-basic/lorem-ipsum-fashion-eight">
-                    Default
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-left-sidebar/lorem-ipsum-fashion-eight">
-                    Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-right-sidebar/lorem-ipsum-fashion-eight">
-                    Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/shop/product-thumb-left/lorem-ipsum-fashion-eight">
-                    Thumb Left
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li className="menu-item-has-children">
-          <Link href="/">
-            Pages
-          </Link>
+          <Link href="/">Pages</Link>
           <ul className="mobile-sub-menu">
             <li>
-              <Link href="/other/about-us">
-                About Us
-              </Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/other/contact-us">
-                Contact Us
-              </Link>
+              <Link href="/faq">F.A.Q</Link>
             </li>
             <li>
-              <Link href="/other/faq">
-                F.A.Q
-              </Link>
-            </li>
-            <li>
-              <Link href="/other/not-found">
-                404 Error Page
-              </Link>
-            </li>
-            <li>
-              <Link href="/other/login">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link href="/other/register">
-                Register
-              </Link>
-            </li>
-            <li>
-              <Link href="/other/terms">
-                Terms & Conditions
-              </Link>
-            </li>
-          </ul>
-        </li>
-
-        <li className="menu-item-has-children">
-          <Link href="/blog/grid-four-columns">
-            Blog
-          </Link>
-          <ul className="mobile-sub-menu">
-            <li className="menu-item-has-children">
-              <Link href="/blog/grid-four-columns">
-                Grids
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/blog/grid-three-columns">
-                    Three Columns
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/grid-four-columns">
-                    Four Columns
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/grid-left-sidebar">
-                    Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/grid-right-sidebar">
-                    Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/grid-standard-left-sidebar">
-                    Standard Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/grid-standard-right-sidebar">
-                    Standard Right Sidebar
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/blog/grid-four-columns">
-                Lists
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/blog/list-left-sidebar">
-                    Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/grid-right-sidebar">
-                    Right Sidebar
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/blog/post-left-sidebar">
-                Single Post
-              </Link>
-              <ul className="mobile-sub-menu">
-                <li>
-                  <Link href="/blog/post-left-sidebar">
-                    Left Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/post-right-sidebar">
-                    Right Sidebar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/post-slider">
-                    Slider Post
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/post-audio">
-                    Audio Post
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/post-video">
-                    Video Post
-                  </Link>
-                </li>
-              </ul>
+              <Link href="/terms">Terms & Conditions</Link>
             </li>
           </ul>
         </li>
 
         <li>
-          <Link href="/other/contact-us">
-            Contact Us
-          </Link>
+          <Link href="/contact">Blog</Link>
+        </li>
+
+        <li>
+          <Link href="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>

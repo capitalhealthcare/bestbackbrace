@@ -1,35 +1,16 @@
-import Link from "next/link";
-import { Container, Row, Col } from "react-bootstrap";
-
-const BannerOne = () => {
+const BannerOne = ({imgPaht}) => {
   return (
-    <div className="banner-area bg--blue-two space-pt-mobile-only--60">
-      <Container>
-        <Row className="align-items-center flex-row-reverse">
-          <Col md={6} className="offset-md-1">
-            <div className="medium-divider d-none d-md-block clearfix" />
-            <div className="trending-text text-center text-md-start">
-              <div className="heading-wrapper mb-3">
-                <span>New season trends!</span>
-                <h2>Best Summer Collection</h2>
-              </div>
-              <h5 className="mb-4">Sale Get up to 50% Off</h5>
-              <Link href="/shop/grid-left-sidebar" className="btn btn-fill-out rounded-0">
-                Shop Now
-              </Link>
-            </div>
-            <div className="medium-divider clearfix" />
-          </Col>
-          <Col md={5}>
-            <div className="text-center trending-img">
-              <img
-                src="/assets/images/banner/trending_img.png"
-                alt="trending_img"
-              />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    <div style={{ width: "100%", overflow: "hidden", height: "300px" }}>
+      <img
+        src={imgPaht}
+        alt="Banner"
+        style={{
+          width: "100%",
+          height: "300px", // Keep the height fixed
+          objectFit: "cover", // This ensures the image covers the entire space without being stretched
+          objectPosition: "center", // This centers the image
+        }}
+      />
     </div>
   );
 };

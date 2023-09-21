@@ -7,7 +7,7 @@ const TextWithImageOne = () => {
         <Row className="align-items-center">
           <Col lg={6}>
             <div className="about-img scene mb-4 mb-lg-0">
-              <img src="/assets/images/banner/about_img.jpg" alt="about_img" />
+              <img src="/assets/images/about.jpg" alt="about_img" />
             </div>
           </Col>
           <Col lg={6}>
@@ -15,15 +15,18 @@ const TextWithImageOne = () => {
               <h2>Who We are</h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              consequuntur quibusdam enim expedita sed nesciunt incidunt
-              accusamus adipisci officia libero laboriosam!
-            </p>
-            <p>
-              Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh
-              id elit. Duis sed odio sit amet nibh vultate cursus a sit amet
-              mauris. Duis sed odio sit amet nibh vultate cursus a sit amet
-              mauris.
+              At the heart of our identity lies a deep-rooted commitment to
+              alleviating physical discomfort and enhancing mobility. Since our
+              inception, we've been singularly focused on delivering the highest
+              quality back braces, meticulously designed to offer unparalleled
+              support and relief. Our profound understanding of the challenges
+              faced by those with back issues propels us to constantly innovate,
+              ensuring we're at the forefront of ergonomic solutions. As a
+              beacon in the world of back support, we pride ourselves on the
+              tangible difference we've made in countless lives.While our legacy
+              is firmly anchored in back braces, our vision for the future is
+              expansive and inclusive. We are excitedly gearing up to introduce
+              a comprehensive range of braces for various needs
             </p>
           </Col>
         </Row>

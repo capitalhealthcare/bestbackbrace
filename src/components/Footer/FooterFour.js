@@ -4,7 +4,7 @@ import {
   IoIosPhonePortrait,
   IoIosMailOpen,
   IoIosPin,
-  IoLogoInstagram
+  IoLogoInstagram,
 } from "react-icons/io";
 import {
   FaFacebookF,
@@ -12,56 +12,28 @@ import {
   FaGooglePlusG,
   FaYoutube,
   FaInstagram,
-  FaHeart
+  FaFax,
 } from "react-icons/fa";
-import { SubscribeEmailThree } from "../Newsletter";
 
 const FooterFour = () => {
   return (
-    <footer className="footer-dark">
-      <div className="footer-top">
+    <footer className="footer-dark" style={{ backgroundColor: "#001642" }}>
+      <div style={{ padding: "25px 0 0" }}>
         <Container>
           <Row>
-            <Col xs={12}>
-              <div className="pb-4 mb-4 mb-md-5 border-bottom--tran">
-                <Row className="align-items-center justify-content-between">
-                  <Col lg={5} md={6}>
-                    <div className="footer-text">
-                      <h3 className="space-mb--25">Subscribe Our Newsletter</h3>
-                      <p>
-                        Contrary to popular belief of lorem Ipsm Latin amet ltin
-                        from industry. Phasellus blandit massa enim varius nunc.{" "}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg={6} md={6}>
-                    <SubscribeEmailThree
-                      mailchimpUrl="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
-                      alertColor="#fff"
-                    />
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={4} md={6} sm={12}>
+            <Col lg={3} md={6} sm={12}>
               <div className="widget">
-                <h6 className="widget-title">Contact Info</h6>
-                <ul className="contact-info contact-info-light">
-                  <li>
-                    <IoIosPin />
-                    <p>123 Street, Old Trafford, New South London , UK</p>
-                  </li>
-                  <li>
-                    <IoIosMailOpen />
-                    <a href="mailto:info@sitename.com">info@sitename.com</a>
-                  </li>
-                  <li>
-                    <IoIosPhonePortrait />
-                    <p>+ 457 789 789 65</p>
-                  </li>
-                </ul>
+                <div className="footer-logo">
+                  <Link href="/">
+                    <img src="/assets/images/logo_light.png" alt="logo" />
+                  </Link>
+                </div>
+                <p>
+                  Experience ultimate relief with our premium back brace.
+                  Whether it's chronic pain, post-injury support, or preventive
+                  care, we got your back. Crafted for comfort and durability,
+                  let's make every move pain-free.
+                </p>
               </div>
               <div className="widget">
                 <ul className="social-icons mb-3 mb-lg-0">
@@ -93,66 +65,49 @@ const FooterFour = () => {
                 </ul>
               </div>
             </Col>
-            <Col lg={2} md={3} sm={6}>
+            <Col lg={3} md={12} sm={12}>
               <div className="widget">
-                <h6 className="widget-title">Useful Links</h6>
-                <ul className="widget-links">
+                <h6 className="widget-title">Contact Info</h6>
+                <ul className="contact-info contact-info-light">
                   <li>
-                    <Link href="/other/about-us">
-                      About Us
-                    </Link>
+                    <IoIosPin />
+                    <p>2071 N collins Blvd Richardson TX 75080</p>
                   </li>
                   <li>
-                    <Link href="/other/faq">
-                      FAQ
-                    </Link>
+                    <IoIosMailOpen />
+                    <a href="mailto:contact@bestbackbrace.com">
+                      contact@bestbackbrace.com
+                    </a>
                   </li>
                   <li>
-                    <Link href="/">
-                      Location
-                    </Link>
+                    <FaFax />
+                    <a href="#">469-562-4166</a>
                   </li>
                   <li>
-                    <Link href="/">
-                      Affiliates
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/other/contact-us">
-                      Contact
-                    </Link>
+                    <IoIosPhonePortrait />
+                    <a href="tel:+14698665222">+1 (469) 866 5222</a>
                   </li>
                 </ul>
               </div>
             </Col>
-            <Col lg={2} md={3} sm={6}>
+            <Col lg={2} md={12} sm={12}>
               <div className="widget">
-                <h6 className="widget-title">My Account</h6>
+                <h6 className="widget-title">Useful Links</h6>
                 <ul className="widget-links">
                   <li>
-                    <Link href="/other/my-account">
-                      My Account
-                    </Link>
+                    <Link href="/terms">Terms & Conditions</Link>
                   </li>
                   <li>
-                    <Link href="/">
-                      Discount
-                    </Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                   <li>
-                    <Link href="/">
-                      Returns
-                    </Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/">
-                      Orders History
-                    </Link>
+                    <Link href="/">Blog</Link>
                   </li>
                   <li>
-                    <Link href="/">
-                      Order Tracking
-                    </Link>
+                    <Link href="/faq">FAQ</Link>
                   </li>
                 </ul>
               </div>
@@ -164,7 +119,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small1.jpg"
+                        src="/assets/images/instagram/insta1.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -175,7 +130,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small2.jpg"
+                        src="/assets/images/instagram/insta2.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -186,7 +141,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small3.jpg"
+                        src="/assets/images/instagram/insta3.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -197,7 +152,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small4.jpg"
+                        src="/assets/images/instagram/insta4.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -208,7 +163,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small5.jpg"
+                        src="/assets/images/instagram/insta5.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -219,7 +174,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small6.jpg"
+                        src="/assets/images/instagram/insta6.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -230,7 +185,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small7.jpg"
+                        src="/assets/images/instagram/insta7.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -241,7 +196,7 @@ const FooterFour = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="/assets/images/instagram/furniture_insta_small8.jpg"
+                        src="/assets/images/instagram/insta8.jpg"
                         alt="insta_img"
                       />
                       <span className="insta-icon">
@@ -255,58 +210,16 @@ const FooterFour = () => {
           </Row>
         </Container>
       </div>
-      <div className="bottom-footer bg--dark-two">
-        <Container>
-          <Row>
-            <Col md={6}>
-              <p className="mb-3 mb-md-0 text-center text-md-start">
-                Copyright &copy; {new Date().getFullYear() + " "}. Built with{" "}
-                <FaHeart /> by{" "}
-                <a href="https://www.hasthemes.com" target="_blank">
-                  HasThemes
-                </a>
-              </p>
-            </Col>
-            <Col md={6}>
-              <ul className="footer-payment text-center text-lg-end">
-                <li>
-                  <a href="#">
-                    <img src="/assets/images/icons/visa.png" alt="visa" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="/assets/images/icons/discover.png"
-                      alt="discover"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="/assets/images/icons/master_card.png"
-                      alt="master_card"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="/assets/images/icons/paypal.png" alt="paypal" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="/assets/images/icons/amarican_express.png"
-                      alt="american_express"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
+      <div
+        className="d-flex justify-content-center p-4"
+        style={{ backgroundColor: "#001230" }}
+      >
+        <p>
+          Copyright &copy; 2023 Design & Developed by{" "}
+          <a href="https://bestbackbrace.com" target="_blank">
+            BestBackBrace
+          </a>
+        </p>
       </div>
     </footer>
   );

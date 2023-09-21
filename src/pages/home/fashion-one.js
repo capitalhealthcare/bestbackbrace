@@ -32,8 +32,7 @@ const FashionOne = () => {
         featuredProducts={featuredProducts}
         saleProducts={saleProducts}
       />
-      {/* single banner */}
-      <BannerOne />
+      
       {/* product slider */}
       <ProductSliderOne title="Featured Products" products={featuredProducts} />
       {/* testimonial */}

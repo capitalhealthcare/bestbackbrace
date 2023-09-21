@@ -1,24 +1,15 @@
-import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { LayoutOne } from "../../layouts";
 import { Sidebar, BlogSinglePostDefault } from "../../components/Blog";
-import { BreadcrumbOne } from "../../components/Breadcrumb";
+import { BannerOne } from "../../components/Banner";
 
 const PostLeftSidebar = () => {
   return (
     <LayoutOne>
+      {/* banner */}
+      <BannerOne imgPaht={"/assets/images/blog-detail.jpg"} />
       {/* breadcrumb */}
-      <BreadcrumbOne pageTitle="Post Left Sidebar">
-        <ol className="breadcrumb justify-content-md-end">
-          <li className="breadcrumb-item">
-            <Link href="/">
-              Home
-            </Link>
-          </li>
-          <li className="breadcrumb-item active">Post Left Sidebar</li>
-        </ol>
-      </BreadcrumbOne>
-      <div className="blog-content space-pt--r100 space-pb--r100">
+      <div className="blog-content py-5">
         <Container>
           <Row>
             <Col lg={9}>

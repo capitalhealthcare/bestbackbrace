@@ -1,26 +1,26 @@
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
-import { EffectFade } from 'swiper';
+import { EffectFade } from "swiper";
 import Swiper, { SwiperSlide } from "../swiper";
 
 const params = {
-  effect: "fade",
+  // effect: "fade",
   fadeEffect: {
-    crossFade: true
+    crossFade: true,
   },
   modules: [EffectFade],
   loop: true,
   speed: 1000,
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
-  navigation: true
+  navigation: false,
 };
 
 const HeroSliderOne = ({ heroSliderData }) => {
   return (
-    <div className="hero-slider space-pb--r100">
+    <div className="hero-slider">
       <div className="hero-slider__wrapper">
         {!!heroSliderData.length ? (
           <Swiper options={params} navClass="hero-slider-one">
@@ -35,18 +35,17 @@ const HeroSliderOne = ({ heroSliderData }) => {
                     <Row>
                       <Col lg={6}>
                         <div className="hero-slider__content overflow-hidden">
-                          <h5 className="mb-3 font-weight-light sub-title">
-                            {single.subtitle}
-                          </h5>
-                          <h2 className="space-mb--20 title">
+                          <h2 className="space-mb--20 title text-white">
                             {single.title}
                           </h2>
+                          <h5 className="mb-3 font-weight-light sub-title text-white">
+                            {single.subtitle}
+                          </h5>
                           <Link
                             href={single.url}
-                            className="btn btn-fill-out rounded-0 text-uppercase slider-link">
-                            
-                              Shop Now
-                            
+                            className="btn btn-fill-out rounded-0 text-uppercase slider-link"
+                          >
+                            Shop Now
                           </Link>
                         </div>
                       </Col>

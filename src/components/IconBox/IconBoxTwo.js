@@ -11,8 +11,9 @@ const IconBoxTwo = () => {
               <h2>Why Choose Us?</h2>
             </div>
             <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
+              Our braces offer unmatched support, blending innovative design
+              with quality materials. Choose us for a comfortable, durable
+              solution to enhance mobility and alleviate discomfort.
             </p>
           </Col>
         </Row>
@@ -20,14 +21,13 @@ const IconBoxTwo = () => {
           <Col lg={4} sm={6}>
             <div className="icon-box icon-box--style2">
               <div className="icon-box__icon">
-                <FaPencilAlt />
+                <FaLayerGroup />
               </div>
               <div className="icon-box__content">
-                <h5>Creative Design</h5>
+                <h5>Unparalleled Quality</h5>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form
+                  Every brace undergoes rigorous testing, ensuring durability
+                  and top-tier performance for optimal support.
                 </p>
               </div>
             </div>
@@ -38,11 +38,10 @@ const IconBoxTwo = () => {
                 <FaLayerGroup />
               </div>
               <div className="icon-box__content">
-                <h5>Flexible Layouts</h5>
+                <h5>Expertise & Innovation</h5>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form
+                  Years of experience drive our constant advancements in brace
+                  design and technology.
                 </p>
               </div>
             </div>
@@ -50,14 +49,13 @@ const IconBoxTwo = () => {
           <Col lg={4} sm={6}>
             <div className="icon-box icon-box--style2">
               <div className="icon-box__icon">
-                <FaRegEnvelope />
+                <FaLayerGroup />
               </div>
               <div className="icon-box__content">
-                <h5>Email Marketing</h5>
+                <h5>Future-Forward Vision</h5>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form
+                  Beyond back braces, we envision a comprehensive range of
+                  diverse orthopedic solutions and innovations.
                 </p>
               </div>
             </div>

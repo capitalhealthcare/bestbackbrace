@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { EffectFade } from "swiper";
 import Swiper, { SwiperSlide } from "../swiper";
@@ -6,16 +5,16 @@ import Swiper, { SwiperSlide } from "../swiper";
 const params = {
   effect: "fade",
   fadeEffect: {
-    crossFade: true
+    crossFade: true,
   },
   modules: [EffectFade],
-  loop: true,
+  loop: false,
   speed: 1000,
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
-  navigation: true
+  navigation: false,
 };
 
 const HeroSliderFour = ({ heroSliderData }) => {
@@ -28,7 +27,7 @@ const HeroSliderFour = ({ heroSliderData }) => {
               <SwiperSlide
                 className="hero-slider__slide hero-slider__slide--style-three bg-image overlay-bg--40"
                 style={{
-                  backgroundImage: `url(${single.backgroundImage})`
+                  backgroundImage: `url(${single.backgroundImage})`,
                 }}
                 key={key}
               >
@@ -40,15 +39,8 @@ const HeroSliderFour = ({ heroSliderData }) => {
                           <h5 className="mb-3 font-weight-light bg-strip sub-title">
                             {single.subtitle}
                           </h5>
-                          <h2 className="space-mb--20 title">
-                            {single.title}
-                          </h2>
+                          <h2 className="space-mb--20 title">{single.title}</h2>
                           <p className="text">{single.text}</p>
-                          <Link href={single.url} className="btn btn-white slider-link">
-                            
-                              Shop Now
-                            
-                          </Link>
                         </div>
                       </Col>
                     </Row>

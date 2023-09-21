@@ -3,7 +3,7 @@ import { ProductGridWrapperFour } from "../ProductThumb";
 
 const ProductGridTwo = ({ title, text, products }) => {
   return (
-    <div className="product-grid-area space-pb--r70">
+    <div className="product-grid-area py-5">
       <Container>
         <Row className="justify-content-center">
           <Col lg={6} md={8}>

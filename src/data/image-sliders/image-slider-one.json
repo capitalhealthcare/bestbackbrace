@@ -1,32 +1,32 @@
 [
   {
     "id": "1",
-    "image": "/assets/images/instagram/furniture_insta1.jpg",
+    "image": "/assets/images/instagram/1.jpg",
     "url": "#"
   },
   {
     "id": "2",
-    "image": "/assets/images/instagram/furniture_insta2.jpg",
+    "image": "/assets/images/instagram/2.jpg",
     "url": "#"
   },
   {
     "id": "3",
-    "image": "/assets/images/instagram/furniture_insta3.jpg",
+    "image": "/assets/images/instagram/3.jpg",
     "url": "#"
   },
   {
     "id": "4",
-    "image": "/assets/images/instagram/furniture_insta4.jpg",
+    "image": "/assets/images/instagram/4.jpg",
     "url": "#"
   },
   {
     "id": "5",
-    "image": "/assets/images/instagram/furniture_insta5.jpg",
+    "image": "/assets/images/instagram/5.jpg",
     "url": "#"
   },
   {
     "id": "6",
-    "image": "/assets/images/instagram/furniture_insta6.jpg",
+    "image": "/assets/images/instagram/6.jpg",
     "url": "#"
   }
 ]
