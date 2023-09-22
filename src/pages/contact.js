@@ -1,10 +1,9 @@
-import Link from "next/link";
 import { LayoutFour } from "../layouts";
-import { BreadcrumbOne } from "../components/Breadcrumb";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaRegMap, FaRegEnvelopeOpen, FaMobileAlt } from "react-icons/fa";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
+
 const ContactUs = () => {
   return (
     <LayoutFour>

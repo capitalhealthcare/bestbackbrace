@@ -1,30 +1,21 @@
-import Link from "next/link";
-import { LayoutOne } from "../../layouts";
-import { BreadcrumbOne } from "../../components/Breadcrumb";
+import { LayoutFour } from "../../layouts";
 import { Container, Row, Col } from "react-bootstrap";
-import { Sidebar, BlogPostGridWrapperTwo } from "../../components/Blog";
+import { BlogPostGridWrapper } from "../../components/Blog";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { HeroSliderOne } from "../../components/HeroSlider";
+import heroSliderOneData from "../../data/hero-sliders/hero-slider-one.json";
 
-const GridStandardRightSidebar = () => {
+const GridThreeColumns = () => {
   return (
-    <LayoutOne>
-      {/* breadcrumb */}
-      <BreadcrumbOne pageTitle="Blog">
-        <ol className="breadcrumb justify-content-md-end">
-          <li className="breadcrumb-item">
-            <Link href="/">
-              Home
-            </Link>
-          </li>
-          <li className="breadcrumb-item active">Blog</li>
-        </ol>
-      </BreadcrumbOne>
-      <div className="blog-content space-pt--r100 space-pb--r100">
+    <LayoutFour>
+      <HeroSliderOne heroSliderData={heroSliderOneData} />
+
+      <div className="blog-content py-5">
         <Container>
           <Row>
-            <Col lg={9}>
+            <Col lg={12}>
               {/* blog post grid wrapper */}
-              <BlogPostGridWrapperTwo />
+              <BlogPostGridWrapper />
               <Row>
                 <Col className="mt-2 mt-md-4">
                   <ul className="pagination pagination-style justify-content-center">
@@ -57,15 +48,11 @@ const GridStandardRightSidebar = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={3} className="mt-4 pt-2 mt-lg-0 pt-lg-0">
-              {/* sidebar */}
-              <Sidebar />
-            </Col>
           </Row>
         </Container>
       </div>
-    </LayoutOne>
+    </LayoutFour>
   );
 };
 
-export default GridStandardRightSidebar;
+export default GridThreeColumns;

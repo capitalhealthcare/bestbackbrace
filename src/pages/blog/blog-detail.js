@@ -1,13 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { LayoutOne } from "../../layouts";
+import { LayoutFour } from "../../layouts";
 import { Sidebar, BlogSinglePostDefault } from "../../components/Blog";
 import { BannerOne } from "../../components/Banner";
+import { HeroSliderOne } from "../../components/HeroSlider";
+import heroSliderOneData from "../../data/hero-sliders/hero-slider-one.json";
 
 const PostLeftSidebar = () => {
   return (
-    <LayoutOne>
+    <LayoutFour>
       {/* banner */}
-      <BannerOne imgPaht={"/assets/images/blog-detail.jpg"} />
+      <HeroSliderOne heroSliderData={heroSliderOneData} />
       {/* breadcrumb */}
       <div className="blog-content py-5">
         <Container>
@@ -21,7 +23,7 @@ const PostLeftSidebar = () => {
           </Row>
         </Container>
       </div>
-    </LayoutOne>
+    </LayoutFour>
   );
 };
 

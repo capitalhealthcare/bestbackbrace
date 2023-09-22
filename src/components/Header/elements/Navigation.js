@@ -48,7 +48,7 @@ const Navigation = ({ positionClass }) => {
           </ul>
         </li>
         <li>
-          <Link href="/blog/grid-four-columns" className="nav-link">
+          <Link href="/blog" className="nav-link">
             BLOG
           </Link>
         </li>

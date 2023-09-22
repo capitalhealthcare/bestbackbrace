@@ -25,14 +25,14 @@ const BlogGrid = ({ customClass }) => {
               }`}
             >
               <div className="blog-post__image">
-                <Link href="/blog/post-left-sidebar">
+                <Link href="/blog/blog-detail">
                   <img src="/assets/images/blog/1.jpg" alt="blog_small_img1" />
                 </Link>
               </div>
               <div className="blog-post__content">
                 <div className="blog-text">
                   <h6 className="blog-title">
-                    <Link href="/blog/post-left-sidebar">
+                    <Link href="/blog/blog-detail">
                       Why is a ticket to Lagos so expensive?
                     </Link>
                   </h6>
@@ -51,14 +51,14 @@ const BlogGrid = ({ customClass }) => {
               }`}
             >
               <div className="blog-post__image">
-                <Link href="/blog/post-left-sidebar">
+                <Link href="/blog/blog-detail">
                   <img src="/assets/images/blog/2.jpg" alt="blog_small_img1" />
                 </Link>
               </div>
               <div className="blog-post__content">
                 <div className="blog-text">
                   <h6 className="blog-title">
-                    <Link href="/blog/post-left-sidebar">
+                    <Link href="/blog/blog-detail">
                       Why is a ticket to Lagos so expensive?
                     </Link>
                   </h6>
@@ -77,14 +77,14 @@ const BlogGrid = ({ customClass }) => {
               }`}
             >
               <div className="blog-post__image">
-                <Link href="/blog/post-left-sidebar">
+                <Link href="/blog/blog-detail">
                   <img src="/assets/images/blog/3.jpg" alt="blog_small_img1" />
                 </Link>
               </div>
               <div className="blog-post__content">
                 <div className="blog-text">
                   <h6 className="blog-title">
-                    <Link href="/blog/post-left-sidebar">
+                    <Link href="/blog/blog-detail">
                       Why is a ticket to Lagos so expensive?
                     </Link>
                   </h6>
@@ -103,14 +103,14 @@ const BlogGrid = ({ customClass }) => {
               }`}
             >
               <div className="blog-post__image">
-                <Link href="/blog/post-left-sidebar">
+                <Link href="/blog/blog-detail">
                   <img src="/assets/images/blog/4.jpg" alt="blog_small_img1" />
                 </Link>
               </div>
               <div className="blog-post__content">
                 <div className="blog-text">
                   <h6 className="blog-title">
-                    <Link href="/blog/post-left-sidebar">
+                    <Link href="/blog/blog-detail">
                       Why is a ticket to Lagos so expensive?
                     </Link>
                   </h6>

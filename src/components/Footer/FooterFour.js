@@ -104,7 +104,7 @@ const FooterFour = () => {
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
                     <Link href="/faq">FAQ</Link>
