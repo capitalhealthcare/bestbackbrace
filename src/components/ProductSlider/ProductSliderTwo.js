@@ -30,7 +30,7 @@ const ProductSliderTwo = ({ title, products, items }) => {
   const { compareItems } = useSelector((state) => state.compare);
 
   return (
-    <div className="product-slider-area space-pt--50">
+    <div className="product-slider-area">
       <Row>
         <Col md={6}>
           <div className="section-title space-mb--25">

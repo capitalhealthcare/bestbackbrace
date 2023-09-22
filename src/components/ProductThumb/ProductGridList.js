@@ -72,7 +72,7 @@ const ProductGridList = ({
                   </button>
                 )}
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={
                     compareItem !== undefined
@@ -83,16 +83,16 @@ const ProductGridList = ({
                 >
                   <i className="icon-shuffle" />
                 </button>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <button
                   onClick={() => setModalShow(true)}
                   className="d-none d-lg-block"
                 >
                   <i className="icon-magnifier-add" />
                 </button>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <button
                   onClick={
                     wishlistItem !== undefined
@@ -103,7 +103,7 @@ const ProductGridList = ({
                 >
                   <i className="icon-heart" />
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
