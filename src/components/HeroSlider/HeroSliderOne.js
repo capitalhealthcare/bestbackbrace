@@ -42,7 +42,7 @@ const HeroSliderOne = ({ heroSliderData }) => {
                             {single.subtitle}
                           </h5>
                           <Link
-                            href={single.url}
+                            href="/products"
                             className="btn btn-fill-out rounded-0 text-uppercase slider-link"
                           >
                             Shop Now

@@ -78,7 +78,7 @@ const HeaderOne = ({ navPositionClass }) => {
 
               <li className="d-none d-lg-block position-relative">
                 <Link
-                  href="/other/cart"
+                  href="/cart"
                   className="nav-link mini-cart-trigger pe-3 pe-lg-0"
                 >
                   <AiOutlineShoppingCart />
@@ -94,7 +94,7 @@ const HeaderOne = ({ navPositionClass }) => {
 
               <li className="d-block d-lg-none position-relative">
                 <Link
-                  href="/other/cart"
+                  href="/cart"
                   className="nav-link mini-cart-trigger pe-3 pe-lg-0"
                 >
                   <AiOutlineShoppingCart />

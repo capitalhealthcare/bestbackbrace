@@ -18,18 +18,18 @@ const Navigation = ({ positionClass }) => {
           </Link>
         </li>
         <li>
-          <Link href="/" className="nav-link">
+          <Link href="/products" className="nav-link">
             PRODUCTS
             <IoIosArrowDown />
           </Link>
 
           <ul className="sub-menu sub-menu--one-column">
             <li>
-              <Link href="/home/fashion-one">Back Brace</Link>
+              <Link href="/products">Back Brace</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/home/fashion-one">Shoulder Brace</Link>
-            </li>
+            </li> */}
           </ul>
         </li>
         <li>

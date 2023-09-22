@@ -82,7 +82,7 @@ const Sidebar = () => {
             <h5 className="text-uppercase shop-subtitle">New Collection</h5>
             <h3 className="text-uppercase shop-title">Sale 10% Off</h3>
             <Link
-              href="/shop/grid-left-sidebar"
+              href="/products"
               className="btn btn-white rounded-0 btn-sm text-uppercase"
             >
               Shop Now

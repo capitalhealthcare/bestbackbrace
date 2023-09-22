@@ -35,7 +35,7 @@ const ImageSliderOne = ({ imageSliderData }) => {
           {imageSliderData.map((single, key) => (
             <SwiperSlide className="item" key={key}>
               <div className="instafeed-box">
-                <a href="/">
+                <a href="/products">
                   <img src={single.image} alt="insta_image" />
                 </a>
               </div>

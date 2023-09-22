@@ -47,14 +47,14 @@ const MobileMenuNav = ({ getActiveStatus }) => {
         </li>
 
         <li className="menu-item-has-children">
-          <Link href="/">Products</Link>
+          <Link href="/products">Products</Link>
           <ul className="mobile-sub-menu">
             <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">Back Brace</Link>
+              <Link href="/products">Back Brace</Link>
             </li>
-            <li className="menu-item-has-children">
+            {/* <li className="menu-item-has-children">
               <Link href="/shop/grid-left-sidebar">Shoulder Brace</Link>
-            </li>
+            </li> */}
           </ul>
         </li>
 

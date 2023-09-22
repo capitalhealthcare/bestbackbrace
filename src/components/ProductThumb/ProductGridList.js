@@ -23,7 +23,7 @@ const ProductGridList = ({
     <Fragment>
       <div className="product-grid">
         <div className="product-grid__image">
-          <Link href={"/shop/product-basic/" + product.slug}>
+          <Link href={"/shop/" + product.slug}>
 
             <img
               src={colorImage ? colorImage : product.thumbImage[0]}
@@ -52,7 +52,7 @@ const ProductGridList = ({
                     <i className="icon-action-redo" />
                   </a>
                 ) : product.variation && product.variation.length >= 1 ? (
-                  (<Link href={"/shop/product-basic/" + product.slug}>
+                  (<Link href={"/shop/" + product.slug}>
                     <i className="icon-wrench" />
                   </Link>)
                 ) : product.stock && product.stock > 0 ? (
@@ -109,7 +109,7 @@ const ProductGridList = ({
         </div>
         <div className="product-grid__info">
           <h6 className="product-title">
-            <Link href={"/shop/product-basic/" + product.slug}>
+            <Link href={"/shop/" + product.slug}>
               {product.name}
             </Link>
           </h6>
@@ -154,7 +154,7 @@ const ProductGridList = ({
       </div>
       <div className="product-list">
         <div className="product-list__image">
-          <Link href={"/shop/product-basic/" + product.slug}>
+          <Link href={"/shop/" + product.slug}>
 
             <img
               src={colorImage ? colorImage : product.thumbImage[0]}
@@ -178,7 +178,7 @@ const ProductGridList = ({
         </div>
         <div className="product-list__info">
           <h6 className="product-title">
-            <Link href={"/shop/product-basic/" + product.slug}>
+            <Link href={"/shop/" + product.slug}>
               {product.name}
             </Link>
           </h6>
@@ -235,7 +235,7 @@ const ProductGridList = ({
                     <i className="icon-action-redo" /> Buy Now
                   </a>
                 ) : product.variation && product.variation.length >= 1 ? (
-                  (<Link href={"/shop/product-basic/" + product.slug} className="btn btn-fill-out btn-addtocart">
+                  (<Link href={"/shop/" + product.slug} className="btn btn-fill-out btn-addtocart">
                     <i className="icon-wrench" />Select Options
                   </Link>)
                 ) : product.stock && product.stock > 0 ? (

@@ -25,7 +25,7 @@ const ProductGridTwo = ({
     <Fragment>
       <div className={clsx("product-grid", bottomSpace)}>
         <div className="product-grid__image">
-          <Link href={"/shop/product-basic/" + product.slug}>
+          <Link href={"/shop/" + product.slug}>
 
             <img
               src={colorImage ? colorImage : product.thumbImage[0]}
@@ -54,7 +54,7 @@ const ProductGridTwo = ({
                     <i className="icon-action-redo" />
                   </a>
                 ) : product.variation && product.variation.length >= 1 ? (
-                  (<Link href={"/shop/product-basic/" + product.slug}>
+                  (<Link href={"/shop/" + product.slug}>
                     <i className="icon-wrench" />
                   </Link>)
                 ) : product.stock && product.stock > 0 ? (
@@ -111,7 +111,7 @@ const ProductGridTwo = ({
         </div>
         <div className="product-grid__info">
           <h6 className="product-title">
-            <Link href={"/shop/product-basic/" + product.slug}>
+            <Link href={"/shop/" + product.slug}>
               {product.name}
             </Link>
           </h6>

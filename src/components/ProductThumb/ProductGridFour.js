@@ -36,7 +36,7 @@ const ProductGridFour = ({
 
           <div className="product-grid__action-box">
             <ul>
-              <li>
+              {/* <li>
                 <button
                   onClick={
                     compareItem !== undefined
@@ -47,8 +47,8 @@ const ProductGridFour = ({
                 >
                   <i className="icon-shuffle" />
                 </button>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <button
                   onClick={() => setModalShow(true)}
                   className="d-none d-lg-block"
@@ -67,13 +67,13 @@ const ProductGridFour = ({
                 >
                   <i className="icon-heart" />
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
         <div className="product-grid__info text-center">
           <h6 className="product-title">
-            <Link href={"/shop/product-basic/" + product.slug}>
+            <Link href={"/shop/" + product.slug}>
               {product.name}
             </Link>
           </h6>

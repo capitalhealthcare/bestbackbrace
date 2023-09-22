@@ -18,7 +18,7 @@ import heroSliderFourData from "../data/hero-sliders/hero-slider-four.json";
 
 const FurnitureTwo = () => {
   const { products } = useSelector((state) => state.product);
-  const bestSellerProducts = getProducts(products, "furniture", "popular", 8);
+  const bestSellerProducts = getProducts(products, "backbrace", "new", 8);
 
   return (
     <LayoutFour navPositionClass="justify-content-center">

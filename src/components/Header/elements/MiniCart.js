@@ -73,10 +73,10 @@ const MiniCart = () => {
               {cartTotalPrice.toFixed(2)}
             </p>
             <div className="cart-buttons">
-              <Link href="/other/cart" className="btn btn-fill-line view-cart">
+              <Link href="/cart" className="btn btn-fill-line view-cart">
                 View Cart
               </Link>
-              <Link href="/other/checkout" className="btn btn-fill-out checkout">
+              <Link href="/checkout" className="btn btn-fill-out checkout">
                 Checkout
               </Link>
             </div>
