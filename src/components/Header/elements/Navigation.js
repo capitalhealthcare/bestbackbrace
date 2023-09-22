@@ -25,7 +25,10 @@ const Navigation = ({ positionClass }) => {
 
           <ul className="sub-menu sub-menu--one-column">
             <li>
-              <Link href="/home/fashion-one">Back Braces</Link>
+              <Link href="/home/fashion-one">Back Brace</Link>
+            </li>
+            <li>
+              <Link href="/home/fashion-one">Shoulder Brace</Link>
             </li>
           </ul>
         </li>

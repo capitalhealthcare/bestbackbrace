@@ -40,6 +40,7 @@ const MyApp = ({Component, ...rest}) => {
     <Fragment>
       <Head>
         <title>Oility | React Next JS Multipurpose eCommerce Template</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
           content="Oility is Powerful React Next JS Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods."

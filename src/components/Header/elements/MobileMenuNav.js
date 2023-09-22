@@ -50,7 +50,10 @@ const MobileMenuNav = ({ getActiveStatus }) => {
           <Link href="/">Products</Link>
           <ul className="mobile-sub-menu">
             <li className="menu-item-has-children">
-              <Link href="/shop/grid-left-sidebar">Backbraces</Link>
+              <Link href="/shop/grid-left-sidebar">Back Brace</Link>
+            </li>
+            <li className="menu-item-has-children">
+              <Link href="/shop/grid-left-sidebar">Shoulder Brace</Link>
             </li>
           </ul>
         </li>
