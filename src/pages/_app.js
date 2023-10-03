@@ -18,20 +18,20 @@ import "../assets/scss/style.scss";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
-  style: ['normal'],
-  subsets: ['latin'],
+  style: ["normal"],
+  subsets: ["latin"],
   display: "swap",
 });
 
 const poppins = Poppins({
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ['normal'],
-  subsets: ['latin'],
+  style: ["normal"],
+  subsets: ["latin"],
   display: "swap",
-})
+});
 
-const MyApp = ({Component, ...rest}) => {
-  const {store, props} = wrapper.useWrappedStore(rest);
+const MyApp = ({ Component, ...rest }) => {
+  const { store, props } = wrapper.useWrappedStore(rest);
   useEffect(() => {
     store.dispatch(setProducts(products));
   }, []);
@@ -39,7 +39,13 @@ const MyApp = ({Component, ...rest}) => {
   return (
     <Fragment>
       <Head>
-        <title>Oility | React Next JS Multipurpose eCommerce Template</title>
+        <title>Relieve Lower Back Pain With the Best Back Brace</title>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="/assets/images/favicon.ico"
+        ></link>
+
         <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
@@ -50,7 +56,8 @@ const MyApp = ({Component, ...rest}) => {
           content="ecommerce, electronics store, Fashion store, furniture store,  react, next js, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store"
         />
       </Head>
-      <style jsx global>{`
+      <style jsx global>
+        {`
           :root {
             --ff-roboto: ${roboto.style.fontFamily};
             --ff-poppins: ${poppins.style.fontFamily};
@@ -58,7 +65,7 @@ const MyApp = ({Component, ...rest}) => {
         `}
       </style>
       <Provider store={store}>
-        <PersistGate persistor={store.__persistor} loading={<Preloader/>}>
+        <PersistGate persistor={store.__persistor} loading={<Preloader />}>
           <Component {...props.pageProps} />
         </PersistGate>
       </Provider>
