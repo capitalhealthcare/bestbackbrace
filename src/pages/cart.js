@@ -1,7 +1,12 @@
 import { useState, Fragment } from "react";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, decreaseQuantity, deleteFromCart, deleteAllFromCart } from "../store/slices/cart-slice";
+import {
+  addToCart,
+  decreaseQuantity,
+  deleteFromCart,
+  deleteAllFromCart,
+} from "../store/slices/cart-slice";
 import { getDiscountPrice, cartItemStock } from "../lib/product";
 import { Container, Row, Col } from "react-bootstrap";
 import { LayoutFour } from "../layouts";
@@ -16,7 +21,6 @@ const Cart = () => {
 
   const { cartItems } = useSelector((state) => state.cart);
   let cartTotalPrice = 0;
-
   return (
     <LayoutFour>
       <HeroSliderOne heroSliderData={heroSliderOneData} />
@@ -50,7 +54,9 @@ const Cart = () => {
                           return (
                             <tr key={key}>
                               <td className="product-thumbnail">
-                                <Link href={"/shop/product-basic/" + product.slug}>
+                                <Link
+                                  href={"/shop/product-basic/" + product.slug}
+                                >
                                   <img
                                     src={product.thumbImage[0]}
                                     alt="product1"
@@ -58,7 +64,9 @@ const Cart = () => {
                                 </Link>
                               </td>
                               <td className="product-name" data-title="Product">
-                                <Link href={"/shop/product-basic/" + product.slug}>
+                                <Link
+                                  href={"/shop/product-basic/" + product.slug}
+                                >
                                   {product.name}
                                 </Link>
                                 {product.selectedProductColor &&
@@ -95,10 +103,12 @@ const Cart = () => {
                                   />
                                   <button
                                     onClick={() =>
-                                      dispatch(addToCart({
-                                        ...product,
-                                        quantity: quantityCount
-                                      }))
+                                      dispatch(
+                                        addToCart({
+                                          ...product,
+                                          quantity: quantityCount,
+                                        })
+                                      )
                                     }
                                     disabled={
                                       product !== undefined &&
@@ -186,7 +196,6 @@ const Cart = () => {
                 </Col>
               </Row>
               <Row>
-                
                 <Col md={12}>
                   <div className="border p-3 p-md-4">
                     <div className="heading-s1 mb-3">
@@ -230,7 +239,10 @@ const Cart = () => {
                   </div>
                   <div className="item-empty-area__text">
                     <p className="space-mb--30">No items found in cart</p>
-                    <Link href="/shop/grid-left-sidebar" className="btn btn-fill-out">
+                    <Link
+                      href="/shop/grid-left-sidebar"
+                      className="btn btn-fill-out"
+                    >
                       Shop Now
                     </Link>
                   </div>

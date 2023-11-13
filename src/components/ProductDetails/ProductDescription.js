@@ -10,12 +10,18 @@ import {
   IoLogoTwitter,
   IoLogoGoogleplus,
   IoLogoYoutube,
-  IoLogoInstagram
+  IoLogoInstagram,
 } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/slices/cart-slice";
-import { addToWishlist, deleteFromWishlist } from "../../store/slices/wishlist-slice";
-import { addToCompare, deleteFromCompare } from "../../store/slices/compare-slice";
+import {
+  addToWishlist,
+  deleteFromWishlist,
+} from "../../store/slices/wishlist-slice";
+import {
+  addToCompare,
+  deleteFromCompare,
+} from "../../store/slices/compare-slice";
 
 const ProductDescription = ({
   product,
@@ -24,7 +30,7 @@ const ProductDescription = ({
   cartItems,
   wishlistItem,
   compareItem,
-  productContentButtonStyleClass
+  productContentButtonStyleClass,
 }) => {
   const dispatch = useDispatch();
   const [selectedProductColor, setSelectedProductColor] = useState(
@@ -76,15 +82,15 @@ const ProductDescription = ({
 
       <div className="product-content__sort-info space-mb--20">
         <ul>
-          <li>
+          {/* <li>
             <BsShield /> 1 Year Brand Warranty
           </li>
           <li>
             <AiOutlineReload /> 30 Days Return Policy
-          </li>
+          </li> 
           <li>
             <GiSwapBag /> Cash on Delivery available
-          </li>
+          </li>*/}
         </ul>
       </div>
 
@@ -213,12 +219,22 @@ const ProductDescription = ({
             {productStock && productStock > 0 ? (
               <button
                 onClick={() =>
-                  dispatch(addToCart({
-                    ...product,
-                    quantity: quantityCount,
-                    selectedProductColor: selectedProductColor ? selectedProductColor : product.selectedProductColor ? product.selectedProductColor : null,
-                    selectedProductSize: selectedProductSize ? selectedProductSize : product.selectedProductSize ? product.selectedProductSize : null
-                  }))
+                  dispatch(
+                    addToCart({
+                      ...product,
+                      quantity: quantityCount,
+                      selectedProductColor: selectedProductColor
+                        ? selectedProductColor
+                        : product.selectedProductColor
+                        ? product.selectedProductColor
+                        : null,
+                      selectedProductSize: selectedProductSize
+                        ? selectedProductSize
+                        : product.selectedProductSize
+                        ? product.selectedProductSize
+                        : null,
+                    })
+                  )
                 }
                 disabled={productCartQty >= productStock}
                 className="btn btn-fill-out btn-addtocart space-ml--10"
@@ -279,10 +295,7 @@ const ProductDescription = ({
           {product.category &&
             product.category.map((item, index, arr) => {
               return (
-                <Link
-                  href="/shop/grid-left-sidebar"
-                  key={index}
-                >
+                <Link href="/shop/grid-left-sidebar" key={index}>
                   {item + (index !== arr.length - 1 ? ", " : "")}
                 </Link>
               );

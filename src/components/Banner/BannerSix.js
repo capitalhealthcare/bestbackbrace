@@ -1,21 +1,19 @@
-import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 
 const BannerSix = () => {
   return (
-    <div className="banner-area space-pb--r100">
+    <div className="banner-area">
       <Container>
         <Row>
           <Col lg={12}>
-            <div className="sale-banner mb-0">
-              <Link href="/shop/grid-left-sidebar" className="hover-effect">
-
+            <div className="sale-banner mt-5 mb-0 section-title text-center">
+              <h1 className="pb-3">PDAC Certification</h1>
+              <div href="#" className="hover-effect">
                 <img
-                  src="/assets/images/banner/shop_banner_img11.png"
+                  src="/assets/images/banner/PDAC-certification-1.png"
                   alt="shop_banner_img11"
                 />
-
-              </Link>
+              </div>
             </div>
           </Col>
         </Row>

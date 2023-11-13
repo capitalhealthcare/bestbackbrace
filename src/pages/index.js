@@ -3,7 +3,7 @@ import { getProducts } from "../lib/product";
 import { LayoutFour } from "../layouts";
 import { HeroSliderFour } from "../components/HeroSlider";
 import { IconBoxThree } from "../components/IconBox";
-
+import { BannerSix } from "../components/Banner";
 import { CategorySliderOne } from "../components/CategorySlider";
 import { ProductGridTwo } from "../components/ProductGrid";
 import { CountdownOne } from "../components/Countdown";
@@ -24,9 +24,11 @@ const FurnitureTwo = () => {
     <LayoutFour navPositionClass="justify-content-center">
       {/* hero slider */}
       <HeroSliderFour heroSliderData={heroSliderFourData} />
+      {/* banner */}
+      <BannerSix />
       {/* Top Products */}
       <ProductGridTwo
-        title="Our Top Products"
+        title="Our Products"
         text="Discover our elite range of back braces, meticulously crafted for unparalleled support. Choose BestBackBrace for comfort that stands the test of time"
         products={bestSellerProducts}
       />

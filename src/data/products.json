@@ -2,13 +2,13 @@
   {
     "id": "1",
     "createDate": "Mar 11 2020 10:01:00 AM",
-    "sku": "asdf101",
-    "name": "Lumbar Back Pain Brace",
-    "slug": "lumbar-back-pain-brace",
+    "sku": "bb-01",
+    "name": "BB-37 Backbrace",
+    "slug": "bb-37-backbrace",
     "price": 99,
     "new": true,
     "category": ["backbrace"],
-    "rating": 4,
+    "rating": 4.5,
     "ratingCount": 5,
     "saleCount": 90,
     "stock": 100,
@@ -21,196 +21,7 @@
       "/assets/images/product/fashion/2.jpg",
       "/assets/images/product/fashion/3.jpg"
     ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "2",
-    "createDate": "Mar 12 2020 10:02:00 AM",
-    "sku": "asdf102",
-    "name": "Plus Size Back Brace",
-    "slug": "plus-size-back-brace",
-    "price": 99,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 3,
-    "ratingCount": 6,
-    "saleCount": 91,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/2.jpg",
-      "/assets/images/product/fashion/3.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/2.jpg",
-      "/assets/images/product/fashion/3.jpg",
-      "/assets/images/product/fashion/4.jpg",
-      "/assets/images/product/fashion/5.jpg",
-      "/assets/images/product/fashion/6.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "3",
-    "createDate": "Mar 13 2020 10:03:00 AM",
-    "sku": "asdf103",
-    "name": "Women's Low Back Brace",
-    "slug": "women-low-back-brace",
-    "price": 19,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 5,
-    "ratingCount": 7,
-    "saleCount": 92,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/3.jpg",
-      "/assets/images/product/fashion/4.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/3.jpg",
-      "/assets/images/product/fashion/4.jpg",
-      "/assets/images/product/fashion/5.jpg",
-      "/assets/images/product/fashion/6.jpg",
-      "/assets/images/product/fashion/7.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "4",
-    "createDate": "Mar 14 2020 10:04:00 AM",
-    "sku": "asdf104",
-    "name": "LSO Sciatica Disc Unloader Brace",
-    "slug": "lso-sciatica-disc-unloader-brace",
-    "price": 20,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 4,
-    "ratingCount": 8,
-    "saleCount": 93,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/4.jpg",
-      "/assets/images/product/fashion/5.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/4.jpg",
-      "/assets/images/product/fashion/5.jpg",
-      "/assets/images/product/fashion/6.jpg",
-      "/assets/images/product/fashion/7.jpg",
-      "/assets/images/product/fashion/8.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "5",
-    "createDate": "Mar 15 2020 10:05:00 AM",
-    "sku": "asdf105",
-    "name": "Adjustable Lower Back Pain Corset",
-    "slug": "adjustable-lower-back-pain-corset",
-    "price": 21,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 3,
-    "ratingCount": 9,
-    "saleCount": 94,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/5.jpg",
-      "/assets/images/product/fashion/6.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/5.jpg",
-      "/assets/images/product/fashion/6.jpg",
-      "/assets/images/product/fashion/7.jpg",
-      "/assets/images/product/fashion/8.jpg",
-      "/assets/images/product/fashion/9.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "6",
-    "createDate": "Mar 16 2020 10:06:00 AM",
-    "sku": "asdf106",
-    "name": "Spondylolsis Back Brace",
-    "slug": "spondylolsis-back-brace",
-    "price": 22,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 5,
-    "ratingCount": 10,
-    "saleCount": 95,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/6.jpg",
-      "/assets/images/product/fashion/7.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/6.jpg",
-      "/assets/images/product/fashion/7.jpg",
-      "/assets/images/product/fashion/8.jpg",
-      "/assets/images/product/fashion/9.jpg",
-      "/assets/images/product/fashion/10.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "7",
-    "createDate": "Mar 17 2020 10:07:00 AM",
-    "sku": "asdf107",
-    "name": "Lower Back Pain Brace",
-    "slug": "lower-back-pain-brace",
-    "price": 23,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 4,
-    "ratingCount": 11,
-    "saleCount": 96,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/7.jpg",
-      "/assets/images/product/fashion/8.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/7.jpg",
-      "/assets/images/product/fashion/8.jpg",
-      "/assets/images/product/fashion/9.jpg",
-      "/assets/images/product/fashion/10.jpg",
-      "/assets/images/product/fashion/11.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "id": "8",
-    "createDate": "Mar 18 2020 10:08:00 AM",
-    "sku": "asdf108",
-    "name": "Low Back Support Belt",
-    "slug": "low-back-support-belt",
-    "price": 24,
-    "new": true,
-    "category": ["backbrace"],
-    "rating": 5,
-    "ratingCount": 12,
-    "saleCount": 97,
-    "stock": 10,
-    "thumbImage": [
-      "/assets/images/product/fashion/8.jpg",
-      "/assets/images/product/fashion/9.jpg"
-    ],
-    "image": [
-      "/assets/images/product/fashion/8.jpg",
-      "/assets/images/product/fashion/9.jpg",
-      "/assets/images/product/fashion/10.jpg",
-      "/assets/images/product/fashion/11.jpg",
-      "/assets/images/product/fashion/12.jpg"
-    ],
-    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+    "shortDescription": "While every effort has been made to obtain maximum strength,function, and durability, there is no guarantee that injury will be prevented through the use of this device.",
     "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
   }
 ]

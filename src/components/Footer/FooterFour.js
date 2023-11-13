@@ -70,22 +70,22 @@ const FooterFour = () => {
                 <h6 className="widget-title">Contact Info</h6>
                 <ul className="contact-info contact-info-light">
                   <li>
-                    <IoIosPin />
-                    <p>2071 N collins Blvd Richardson TX 75080</p>
-                  </li>
-                  <li>
                     <IoIosMailOpen />
                     <a href="mailto:contact@bestbackbrace.com">
                       contact@bestbackbrace.com
                     </a>
                   </li>
                   <li>
-                    <FaFax />
-                    <a href="#">469-562-4166</a>
-                  </li>
-                  <li>
                     <IoIosPhonePortrait />
                     <a href="tel:+14698665222">+1 (469) 866 5222</a>
+                  </li>
+                  <li>
+                    <IoIosPin />
+                    <p>2071 N collins Blvd Richardson TX 75080</p>
+                  </li>
+                  <li>
+                    <FaFax />
+                    <a href="#">469-562-4166</a>
                   </li>
                 </ul>
               </div>
