@@ -162,7 +162,7 @@ const ProductGridList = ({
             />
 
           </Link>
-          <div className="product-grid__badge-wrapper">
+          {/* <div className="product-grid__badge-wrapper">
             {product.new ? <span className="pr-flash">NEW</span> : ""}
             {product.featured ? (
               <span className="pr-flash bg-danger">HOT</span>
@@ -174,7 +174,7 @@ const ProductGridList = ({
             ) : (
               ""
             )}
-          </div>
+          </div> */}
         </div>
         <div className="product-list__info">
           <h6 className="product-title">
@@ -257,7 +257,7 @@ const ProductGridList = ({
                   </button>
                 )}
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={
                     compareItem !== undefined
@@ -268,16 +268,16 @@ const ProductGridList = ({
                 >
                   <i className="icon-shuffle" />
                 </button>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <button
                   onClick={() => setModalShow(true)}
                   className="d-none d-lg-block"
                 >
                   <i className="icon-magnifier-add" />
                 </button>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <button
                   onClick={
                     wishlistItem !== undefined
@@ -288,7 +288,7 @@ const ProductGridList = ({
                 >
                   <i className="icon-heart" />
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -295,7 +295,7 @@ const ProductDescription = ({
           {product.category &&
             product.category.map((item, index, arr) => {
               return (
-                <Link href="/shop/grid-left-sidebar" key={index}>
+                <Link href="/products" key={index}>
                   {item + (index !== arr.length - 1 ? ", " : "")}
                 </Link>
               );

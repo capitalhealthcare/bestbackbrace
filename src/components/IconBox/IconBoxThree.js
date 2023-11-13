@@ -12,7 +12,7 @@ const IconBoxThree = () => {
               </div>
               <div className="icon-box__content">
                 <h6>Free Delivery</h6>
-                <p>Free delivery up to $300, wherever you are</p>
+                <p>Free delivery within the USA</p>
               </div>
             </div>
           </Col>

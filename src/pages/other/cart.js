@@ -262,7 +262,7 @@ const Cart = () => {
                           </tr>
                           <tr>
                             <td className="cart-total-label">Shipping</td>
-                            <td className="cart-total-amount">Free Shipping</td>
+                            <td className="cart-total-amount">Free Shipping within the USA</td>
                           </tr>
                           <tr>
                             <td className="cart-total-label">Total</td>

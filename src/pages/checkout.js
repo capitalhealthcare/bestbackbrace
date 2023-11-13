@@ -179,7 +179,7 @@ const Checkout = () => {
                         </tr>
                         <tr>
                           <th>Shipping</th>
-                          <td>Free Shipping</td>
+                          <td>Free Shipping within the USA</td>
                         </tr>
                         <tr>
                           <th>Total</th>
@@ -273,7 +273,7 @@ const Checkout = () => {
                     <p className="space-mb--30">
                       No items found in cart to checkout
                     </p>
-                    <Link href="/shop/grid-left-sidebar" className="btn btn-fill-out">
+                    <Link href="/products" className="btn btn-fill-out">
                       Shop Now
                     </Link>
                   </div>
