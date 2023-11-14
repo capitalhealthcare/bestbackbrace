@@ -1,4 +1,5 @@
 import axios from "axios";
+
 const BASE_URL = "https://bestbackbrace-api.vercel.app/";
 const config = {
   headers: {
@@ -8,8 +9,10 @@ const config = {
       "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
   },
 };
+
 const api = axios.create({
   baseURL: BASE_URL,
   config,
 });
+
 export default api;
