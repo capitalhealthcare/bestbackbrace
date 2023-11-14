@@ -10,7 +10,7 @@ const ImageGalleryBottomThumb = ({ product }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [index, setIndex] = useState(-1);
 
-  const slides = product?.image.map((img, i) => ({
+  const slides = product?.image?.map((img, i) => ({
     src: img,
     key: i,
   }));
@@ -41,7 +41,7 @@ const ImageGalleryBottomThumb = ({ product }) => {
   return (
     <Fragment>
       <div className="product-large-image-wrapper">
-        {!!product.image.length && (
+        {!!product?.image?.length && (
           <Swiper options={gallerySwiperParams}>
               {product.image.map((image, i) => (
                 <SwiperSlide key={i}>
@@ -64,7 +64,7 @@ const ImageGalleryBottomThumb = ({ product }) => {
         />
       </div>
       <div className="product-small-image-wrapper">
-        {!!product.image.length && (
+        {!!product?.image?.length && (
           <Swiper options={thumbnailSwiperParams}>
             {product.image.map((image, i) => (
               <SwiperSlide key={i}>

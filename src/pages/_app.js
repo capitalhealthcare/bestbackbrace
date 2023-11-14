@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Head from "next/head";
 import { Roboto, Poppins } from "@next/font/google";
 import { Provider } from "react-redux";
@@ -7,6 +7,7 @@ import { wrapper } from "../store";
 import { setProducts } from "../store/slices/product-slice";
 import products from "../data/products.json";
 import Preloader from "../components/Preloader";
+import api from "../lib/api";
 
 import "react-slidedown/lib/slidedown.css";
 import "animate.css";
@@ -31,9 +32,22 @@ const poppins = Poppins({
 });
 
 const MyApp = ({ Component, ...rest }) => {
+  const [apiData, setApiData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const res = await api.get("getproducts");
+      if (res.status === 200) {
+        if (res && res.data && res.data.allProducts)
+          setApiData(res.data.allProducts);
+      }
+    }
+    fetchData();
+    
+  }, []);
   const { store, props } = wrapper.useWrappedStore(rest);
   useEffect(() => {
-    store.dispatch(setProducts(products));
+    if (apiData) store.dispatch(setProducts(apiData));
   }, []);
 
   return (

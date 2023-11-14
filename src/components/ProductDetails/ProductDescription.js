@@ -28,8 +28,6 @@ const ProductDescription = ({
   productPrice,
   discountedPrice,
   cartItems,
-  wishlistItem,
-  compareItem,
   productContentButtonStyleClass,
 }) => {
   const dispatch = useDispatch();
@@ -55,15 +53,15 @@ const ProductDescription = ({
       <h2 className="product-content__title space-mb--10">{product.name}</h2>
       <div className="product-content__price-rating-wrapper space-mb--10">
         <div className="product-content__price d-flex-align-items-center">
-          {product.discount ? (
+          {/* {product.discount ? (
             <Fragment>
               <span className="price">${discountedPrice}</span>
               <del>${productPrice}</del>
               <span className="on-sale">{product.discount}% Off</span>
             </Fragment>
-          ) : (
+          ) : ( */}
             <span className="price">${productPrice}</span>
-          )}
+          {/* // )} */}
         </div>
         {product.rating && product.rating > 0 ? (
           <div className="product-content__rating-wrap">
