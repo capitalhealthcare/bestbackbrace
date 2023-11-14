@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { useSelector } from "react-redux";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Paginator from "react-hooks-paginator";
 import { LayoutFour } from "../layouts";
-import { BreadcrumbOne } from "../components/Breadcrumb";
-import { Sidebar, ShopHeader, ShopProducts } from "../components/Shop";
+import { ShopHeader, ShopProducts } from "../components/Shop";
 import { getSortedProducts } from "../lib/product";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
@@ -53,38 +51,38 @@ const GridLeftSidebar = () => {
 
   return (
     <LayoutFour>
-         <HeroSliderOne heroSliderData={heroSliderOneData} />
+      <HeroSliderOne heroSliderData={heroSliderOneData} />
       <div className="shop-content py-5">
         <Container>
           <Row>
             {/* <Col lg={9}> */}
-              {/* shop page header */}
-              <ShopHeader
-                getLayout={getLayout}
-                getFilterSortParams={getFilterSortParams}
-                shopTopFilterStatus={shopTopFilterStatus}
-                setShopTopFilterStatus={setShopTopFilterStatus}
-                layout={layout}
-              />
-              {/* shop products */}
-              <ShopProducts layout={layout} products={currentData} />
+            {/* shop page header */}
+            <ShopHeader
+              getLayout={getLayout}
+              getFilterSortParams={getFilterSortParams}
+              shopTopFilterStatus={shopTopFilterStatus}
+              setShopTopFilterStatus={setShopTopFilterStatus}
+              layout={layout}
+            />
+            {/* shop products */}
+            <ShopProducts layout={layout} products={currentData} />
 
-              {/* shop product pagination */}
-              <div className="pagination pagination-style pagination-style--two justify-content-center">
-                <Paginator
-                  totalRecords={sortedProducts.length}
-                  pageLimit={pageLimit}
-                  pageNeighbours={2}
-                  setOffset={setOffset}
-                  currentPage={currentPage}
-                  setCurrentPage={setCurrentPage}
-                  pageContainerClass="mb-0 mt-0"
-                  pagePrevText="«"
-                  pageNextText="»"
-                />
-              </div>
+            {/* shop product pagination */}
+            <div className="pagination pagination-style pagination-style--two justify-content-center">
+              <Paginator
+                totalRecords={sortedProducts.length}
+                pageLimit={pageLimit}
+                pageNeighbours={2}
+                setOffset={setOffset}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                pageContainerClass="mb-0 mt-0"
+                pagePrevText="«"
+                pageNextText="»"
+              />
+            </div>
             {/* </Col> */}
-             {/* sidebar */}
+            {/* sidebar */}
             {/* <Col lg={3} className="order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
               <Sidebar products={products} getSortParams={getSortParams} />
             </Col> */}

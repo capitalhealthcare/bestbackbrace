@@ -240,7 +240,7 @@ const Cart = () => {
                   <div className="item-empty-area__text">
                     <p className="space-mb--30">No items found in cart</p>
                     <Link
-                      href="/shop/grid-left-sidebar"
+                      href="/"
                       className="btn btn-fill-out"
                     >
                       Shop Now
