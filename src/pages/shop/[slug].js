@@ -71,18 +71,18 @@ const ProductBasic = ({ product }) => {
             </Col>
           </Row> */}
           {/* seperator*/}
-          <Row>
+          {/* <Row>
             <Col lg={12}>
               <div className="divider center-icon space-mt--30 space-mb--30">
                 <i className="icon-basket-loaded" />
               </div>
             </Col>
-          </Row>
+          </Row> */}
           {/* related product slider */}
-          <ProductSliderTwo
+          {/* <ProductSliderTwo
             title="Related Products"
             products={relatedProducts}
-          />
+          /> */}
         </Container>
       </div>
     </LayoutFour>

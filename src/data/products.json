@@ -10,16 +10,16 @@
     "category": ["backbrace"],
     "rating": 4.5,
     "ratingCount": 5,
-    "saleCount": 90,
+    "saleCount": 0,
     "stock": 100,
     "thumbImage": [
-      "/assets/images/product/fashion/1.jpg",
-      "/assets/images/product/fashion/2.jpg"
+      "/assets/images/product/fashion/1.jpg"
     ],
     "image": [
       "/assets/images/product/fashion/1.jpg",
       "/assets/images/product/fashion/2.jpg",
       "/assets/images/product/fashion/3.jpg"
+      
     ],
     "shortDescription": "While every effort has been made to obtain maximum strength,function, and durability, there is no guarantee that injury will be prevented through the use of this device.",
     "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
