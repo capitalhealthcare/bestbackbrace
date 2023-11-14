@@ -43,12 +43,17 @@ const MyApp = ({ Component, ...rest }) => {
       }
     }
     fetchData();
-    
   }, []);
   const { store, props } = wrapper.useWrappedStore(rest);
+
   useEffect(() => {
-    if (apiData) store.dispatch(setProducts(apiData));
-  }, []);
+    if (apiData.length > 0) {
+      store.dispatch(setProducts(apiData));
+    }
+  }, [apiData, store]);
+  // useEffect(() => {
+  //   if (apiData) store.dispatch(setProducts(apiData));
+  // }, []);
 
   return (
     <Fragment>
