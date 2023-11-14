@@ -301,23 +301,27 @@ const ProductDescription = ({
               );
             })}
         </li> */}
+
+        <marquee behavior="scroll" direction="right">
+          <h2>Guidance</h2>
+        </marquee>
+
         <div className="spread-img">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  style={{
-                    width: "100%",
-                    height: "70%",
-                  }}
-                >
-                  <source
-                    src="/assets/images/product/fashion/video.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-                {/* <img src="/images/our-mission/pain-body.mp4" alt="Spread" /> */}
-              </div>
+          <video
+            autoPlay
+            muted
+            loop
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <source
+              src="/assets/images/product/fashion/video.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         {/* <li>
           Tags:
           {product.tag &&
