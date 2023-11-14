@@ -10,7 +10,6 @@ import {
 import { getDiscountPrice, cartItemStock } from "../lib/product";
 import { Container, Row, Col } from "react-bootstrap";
 import { LayoutFour } from "../layouts";
-import { BreadcrumbOne } from "../components/Breadcrumb";
 import { IoIosClose } from "react-icons/io";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";

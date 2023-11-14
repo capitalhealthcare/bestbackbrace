@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { LayoutFour } from "../layouts";
-import { BreadcrumbOne } from "../components/Breadcrumb";
 import { Container, Row, Col } from "react-bootstrap";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
