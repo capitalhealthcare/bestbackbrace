@@ -281,6 +281,22 @@ const Checkout = () => {
                     </table>
                   </div>
                 </div>
+                <div className="spread-img">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+                    <source
+                      src="/assets/images/product/fashion/video.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
               </Col>
             </Row>
           ) : (

@@ -52,13 +52,13 @@ const Sidebar = ({ products, category }) => {
                 return (
                   <li className="widget-product-post" key={key}>
                     <div className="widget-product-post__image">
-                      <Link href={"/shop/product-basic/" + product.slug}>
+                      <Link href={"/shop/" + product.slug}>
                         <img src={product.thumbImage[0]} alt="shop_small1" />
                       </Link>
                     </div>
                     <div className="widget-product-post__content">
                       <h6 className="product-title">
-                        <Link href={"/shop/product-basic/" + product.slug}>
+                        <Link href={"/shop/" + product.slug}>
                           {product.name}
                         </Link>
                       </h6>

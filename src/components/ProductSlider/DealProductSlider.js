@@ -53,7 +53,7 @@ const DealProductSlider = ({ title, products }) => {
                   return (
                     <SwiperSlide className="deal-product" key={key}>
                       <div className="deal-product__image">
-                        <Link href={"/shop/product-basic/" + product.slug}>
+                        <Link href={"/shop/" + product.slug}>
                           <img
                             src={product.thumbImage[0]}
                             alt="product_img1"
@@ -62,7 +62,7 @@ const DealProductSlider = ({ title, products }) => {
                       </div>
                       <div className="deal-product__info">
                         <h5 className="product-title">
-                          <Link href={"/shop/product-basic/" + product.slug}>
+                          <Link href={"/shop/" + product.slug}>
                             {product.name}
                           </Link>
                         </h5>

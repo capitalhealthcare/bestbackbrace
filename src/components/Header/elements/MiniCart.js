@@ -31,12 +31,12 @@ const MiniCart = () => {
                   </button>
                   <div className="single-item">
                     <div className="single-item__image">
-                      <Link href={"/shop/product-basic/" + product.slug}>
+                      <Link href={"/shop/" + product.slug}>
                         <img src={product.thumbImage[0]} alt="cart_thumb1" />
                       </Link>
                     </div>
                     <div className="single-item__content">
-                      <Link href={"/shop/product-basic/" + product.slug}>
+                      <Link href={"/shop/" + product.slug}>
                         {product.name}
                       </Link>
                       <span className="cart-quantity">

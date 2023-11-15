@@ -25,7 +25,7 @@ const ProductGridFour = ({
     <Fragment>
       <div className={clsx("product-grid product-grid--style-two", bottomSpace)}>
         <div className="product-grid__image">
-          <Link href={"/shop/product-basic/" + product.slug}>
+          <Link href={"/shop/" + product.slug}>
 
             <img
               src={colorImage ? colorImage : product.thumbImage[0]}
@@ -102,7 +102,7 @@ const ProductGridFour = ({
               </a>
             ) : product.variation && product.variation.length >= 1 ? (
               (<Link
-                href={"/shop/product-basic/" + product.slug}
+                href={"/shop/" + product.slug}
                 className="btn btn-fill-out btn-radius">
 
                 <i className="icon-wrench" />Select Options

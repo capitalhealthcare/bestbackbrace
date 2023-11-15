@@ -41,7 +41,7 @@ const ProductSliderEight = ({ title, products, navClass }) => {
                   return (
                     <div className="widget-product" key={key}>
                       <div className="widget-product__image">
-                        <Link href={"/shop/product-basic/" + product.slug}>
+                        <Link href={"/shop/" + product.slug}>
 
                           <img src={product.thumbImage[0]} alt="" />
                           <img
@@ -54,7 +54,7 @@ const ProductSliderEight = ({ title, products, navClass }) => {
                       </div>
                       <div className="widget-product__content">
                         <h6 className="product-title">
-                          <Link href={"/shop/product-basic/" + product.slug}>
+                          <Link href={"/shop/" + product.slug}>
                             {product.name}
                           </Link>
                         </h6>

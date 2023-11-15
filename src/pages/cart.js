@@ -54,7 +54,7 @@ const Cart = () => {
                             <tr key={key}>
                               <td className="product-thumbnail">
                                 <Link
-                                  href={"/shop/product-basic/" + product.slug}
+                                  href={"/shop/" + product.slug}
                                 >
                                   <img
                                     src={product.thumbImage[0]}
@@ -64,7 +64,7 @@ const Cart = () => {
                               </td>
                               <td className="product-name" data-title="Product">
                                 <Link
-                                  href={"/shop/product-basic/" + product.slug}
+                                  href={"/shop/" + product.slug}
                                 >
                                   {product.name}
                                 </Link>

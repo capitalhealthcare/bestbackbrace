@@ -45,9 +45,9 @@ const ImageGalleryBottomThumb = ({ product }) => {
           <Swiper options={gallerySwiperParams}>
               {product.image.map((image, i) => (
                 <SwiperSlide key={i}>
-                  <button className="enlarge-icon" onClick={() => setIndex(key)}>
+                  {/* <button className="enlarge-icon" onClick={() => setIndex(key)}>
                     <i className="icon-magnifier-add" />
-                  </button>
+                  </button> */}
                   <div className="single-image">
                     <img src={image} className="img-fluid" alt="" />
                   </div>
