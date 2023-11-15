@@ -80,6 +80,9 @@ const MobileMenuNav = ({ getActiveStatus }) => {
         <li>
           <Link href="/contact">Contact Us</Link>
         </li>
+        <li>
+          <Link href="/certification"> PDAC Certification</Link>
+        </li>
       </ul>
     </nav>
   );

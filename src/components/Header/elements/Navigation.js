@@ -60,6 +60,11 @@ const Navigation = ({ positionClass }) => {
             CONTACT US
           </Link>
         </li>
+        <li>
+          <Link href="/certification" className="nav-link">
+            PDAC Certification
+          </Link>
+        </li>
       </ul>
     </nav>
   );

@@ -10,7 +10,11 @@ const BannerSix = () => {
               <h1 className="pb-3">PDAC Certification</h1>
               <div href="#" className="hover-effect">
                 <img
-                  src="/assets/images/banner/PDAC-certification-1.png"
+                  src="/assets/images/banner/certification-1.png"
+                  alt="shop_banner_img11"
+                />
+                <img
+                  src="/assets/images/banner/certification-2.png"
                   alt="shop_banner_img11"
                 />
               </div>
