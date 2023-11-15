@@ -68,12 +68,12 @@ const MyApp = ({ Component, ...rest }) => {
         <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
-          content="Oility is Powerful React Next JS Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods."
+          content="Discover our elite range of back braces, meticulously crafted for unparalleled support. Choose BestBackBrace for comfort that stands the test of time"
         />
-        <meta
+        {/* <meta
           name="keywords"
           content="ecommerce, electronics store, Fashion store, furniture store,  react, next js, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store"
-        />
+        /> */}
       </Head>
       <style jsx global>
         {`
