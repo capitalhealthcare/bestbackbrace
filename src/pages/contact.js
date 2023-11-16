@@ -1,10 +1,40 @@
+import React, { useState } from "react";
 import { LayoutFour } from "../layouts";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaRegMap, FaRegEnvelopeOpen, FaMobileAlt } from "react-icons/fa";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
+import api from "../lib/api";
 
 const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [loader, setLoader] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const finalData = {
+      name,
+      email,
+      phone,
+      subject,
+      message,
+    };
+    setLoader(true);
+    let res = await api.post("/createContact/", finalData);
+    if (res.status === 200) {
+      setName("");
+      setEmail("");
+      setPhone("");
+      setSubject("");
+      setMessage("");
+      setLoader(false);
+    }
+  };
   return (
     <LayoutFour>
       <HeroSliderOne heroSliderData={heroSliderOneData} />
@@ -61,7 +91,7 @@ const ContactUs = () => {
                   Closer connections, just a message away.
                 </p>
                 <div className="field-form">
-                  <form method="post">
+                  <form method="post" onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="mb-3 col-md-6">
                         <input
@@ -71,6 +101,10 @@ const ContactUs = () => {
                           className="form-control"
                           name="name"
                           type="text"
+                          value={name}
+                          onChange={(e) => {
+                            setName(e.target.value);
+                          }}
                         />
                       </div>
                       <div className="mb-3 col-md-6">
@@ -81,6 +115,10 @@ const ContactUs = () => {
                           className="form-control"
                           name="email"
                           type="email"
+                          value={email}
+                          onChange={(e) => {
+                            setEmail(e.target.value);
+                          }}
                         />
                       </div>
                       <div className="mb-3 col-md-6">
@@ -90,6 +128,10 @@ const ContactUs = () => {
                           id="phone"
                           className="form-control"
                           name="phone"
+                          value={phone}
+                          onChange={(e) => {
+                            setPhone(e.target.value);
+                          }}
                         />
                       </div>
                       <div className="mb-3 col-md-6">
@@ -98,6 +140,10 @@ const ContactUs = () => {
                           id="subject"
                           className="form-control"
                           name="subject"
+                          value={subject}
+                          onChange={(e) => {
+                            setSubject(e.target.value);
+                          }}
                         />
                       </div>
                       <div className="mb-3 col-md-12">
@@ -108,7 +154,10 @@ const ContactUs = () => {
                           className="form-control"
                           name="message"
                           rows={4}
-                          defaultValue={""}
+                          value={message}
+                          onChange={(e) => {
+                            setMessage(e.target.value);
+                          }}
                         />
                       </div>
                       <div className="col-md-12">
@@ -119,7 +168,21 @@ const ContactUs = () => {
                           id="submitButton"
                           name="submit"
                           value="Submit"
+                          disabled={loader}
                         >
+                          {loader && (
+                            <div
+                              className="spinner-border"
+                              role="status"
+                              style={{
+                                color: "white",
+                                width: "1rem",
+                                height: "1rem",
+                                borderWidth: "0.2em",
+                                marginRight: "0.5rem",
+                              }}
+                            ></div>
+                          )}
                           Send Message
                         </button>
                       </div>

@@ -35,8 +35,8 @@ const FooterFour = () => {
                   let's make every move pain-free.
                 </p>
               </div>
-              <div className="widget">
-                <ul className="social-icons mb-3 mb-lg-0">
+              <div className="widget" style={{ visibility: "hidden" }}>
+                {/* <ul className="social-icons mb-3 mb-lg-0">
                   <li>
                     <a href="#" className="sc_facebook">
                       <FaFacebookF />
@@ -62,7 +62,7 @@ const FooterFour = () => {
                       <FaInstagram />
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </Col>
             <Col lg={3} md={12} sm={12}>
@@ -85,7 +85,7 @@ const FooterFour = () => {
                   </li>
                   <li>
                     <FaFax />
-                    <a href="#">469-562-4166</a>
+                    <p>469-562-4166</p>
                   </li>
                 </ul>
               </div>
@@ -117,92 +117,92 @@ const FooterFour = () => {
                 <h6 className="widget-title">Instagram</h6>
                 <ul className="widget-instafeed widget-instafeed--col4">
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta1.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta1.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta2.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta2.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta3.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta3.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta4.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta4.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta5.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta5.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta6.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta6.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta7.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta7.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                   <li>
-                    <a href="#">
-                      <img
-                        src="/assets/images/instagram/insta8.jpg"
-                        alt="insta_img"
-                      />
-                      <span className="insta-icon">
-                        <IoLogoInstagram />
-                      </span>
-                    </a>
+                    {/* <a href="#"> */}
+                    <img
+                      src="/assets/images/instagram/insta8.jpg"
+                      alt="insta_img"
+                    />
+                    <span className="insta-icon">
+                      <IoLogoInstagram />
+                    </span>
+                    {/* </a> */}
                   </li>
                 </ul>
               </div>
