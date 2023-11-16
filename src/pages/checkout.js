@@ -17,11 +17,15 @@ import {
 } from "../store/slices/cart-slice";
 import axios from "axios";
 import api from "../lib/api";
+import Loader from "../components/Loader";
 
 const Checkout = () => {
-  const { cartItems } = useSelector((state) => state.cart);
-  let cartTotalPrice = 0;
   const dispatch = useDispatch();
+  const router = useRouter();
+
+  const { cartItems } = useSelector((state) => state.cart);
+
+  let cartTotalPrice = 0;
 
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -36,24 +40,17 @@ const Checkout = () => {
   const [ordeNotes, setOrdeNotes] = useState("");
   const [loader, setLoader] = useState(false);
 
-  console.log("cartItems", cartItems);
-
-  const router = useRouter();
-
   const handleToken = async (token) => {
     const res = await api.post("createPayment/", {
-      amount: cartItems[0].price * cartItems[0].quantity * 100,
+      amount: cartItems[0]?.price * cartItems[0]?.quantity * 100,
       token: token,
     });
-    // const res = await axios.post("http://localhost:7700/createPayment/", {
-    //   amount: 1 * 100,
-    //   token: token,
-    // });
+
     if (res.data.message === "Payment successful") {
       // If payment is successful, submit the form
 
       let productData = [
-        { product: cartItems[0]._id, quantity: cartItems[0].quantity },
+        { product: cartItems[0]?._id, quantity: cartItems[0]?.quantity },
       ];
 
       const finalData = {
@@ -70,9 +67,10 @@ const Checkout = () => {
         ordeNotes,
         products: productData,
       };
-
+      setLoader(true);
       let res = await api.post("/createOrder/", finalData);
       if (res.status === 200) {
+        setLoader(false);
         dispatch(deleteAllFromCart());
         router.push("/order-completed");
       }
@@ -89,6 +87,7 @@ const Checkout = () => {
 
   return (
     <LayoutFour>
+      {loader && <Loader />}
       <HeroSliderOne heroSliderData={heroSliderOneData} />
       <div className="checkout-content space-pt--r70 space-pb--r70">
         <Container>
@@ -250,7 +249,7 @@ const Checkout = () => {
                         token={handleToken}
                         stripeKey="pk_live_51OCTX8BBPThbsa5eVtQdO1QO0sJyeUHew8WPtetlVOnBPcuID5phBKhM1SOwuyOXDHvPmRtpEvLdfoS5Rg6u1smx00m0tbF24G"
                         amount={
-                          cartItems[0].price * cartItems[0].quantity * 100
+                          cartItems[0]?.price * cartItems[0]?.quantity * 100
                         }
                         name="BestBackBrace"
                         email={email}
