@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import StripeCheckout from "react-stripe-checkout";
+import { useRouter } from "next/router";
 import { Container, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { getDiscountPrice } from "../lib/product";
 import { IoMdCash } from "react-icons/io";
 import { LayoutFour } from "../layouts";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
+import {
+  addToCart,
+  decreaseQuantity,
+  deleteFromCart,
+  deleteAllFromCart,
+} from "../store/slices/cart-slice";
+import axios from "axios";
+import api from "../lib/api";
+
 const Checkout = () => {
   const { cartItems } = useSelector((state) => state.cart);
   let cartTotalPrice = 0;
+  const dispatch = useDispatch();
+
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
@@ -23,34 +36,55 @@ const Checkout = () => {
   const [ordeNotes, setOrdeNotes] = useState("");
   const [loader, setLoader] = useState(false);
 
+  console.log("cartItems", cartItems);
+
+  const router = useRouter();
+
+  const handleToken = async (token) => {
+    const res = await api.post("createPayment/", {
+      amount: cartItems[0].price * cartItems[0].quantity * 100,
+      token: token,
+    });
+    // const res = await axios.post("http://localhost:7700/createPayment/", {
+    //   amount: 1 * 100,
+    //   token: token,
+    // });
+    if (res.data.message === "Payment successful") {
+      // If payment is successful, submit the form
+
+      let productData = [
+        { product: cartItems[0]._id, quantity: cartItems[0].quantity },
+      ];
+
+      const finalData = {
+        name,
+        company,
+        email,
+        phone,
+        country,
+        address,
+        address2,
+        city,
+        state,
+        zipCode,
+        ordeNotes,
+        products: productData,
+      };
+
+      let res = await api.post("/createOrder/", finalData);
+      if (res.status === 200) {
+        dispatch(deleteAllFromCart());
+        router.push("/order-completed");
+      }
+    }
+  };
+
+  // Enable payment button when all required fields are filled
+  const isFormValid =
+    name && email && phone && country && address && city && state && zipCode;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const finalData = {
-      name,
-      company,
-      email,
-      phone,
-      country,
-      address,
-      address2,
-      city,
-      state,
-      zipCode,
-      ordeNotes,
-    };
-    debugger;
-    // setLoader(true);
-    // const res = await api.post("/createContact", finalData);
-    // if (res.status === 200) {
-    //   toast("Thank you! Your message is successfully received");
-    //   setName("");
-    //   setEmail("");
-    //   setSubject("");
-    //   setMessage("");
-    //   setLoader(false);
-    // }
-    // history.push('/order-completed')
   };
 
   return (
@@ -58,7 +92,7 @@ const Checkout = () => {
       <HeroSliderOne heroSliderData={heroSliderOneData} />
       <div className="checkout-content space-pt--r70 space-pb--r70">
         <Container>
-          {cartItems && cartItems.length >= 1 ? (
+          {cartItems && (
             <Row>
               <Col md={6}>
                 <div className="heading-s1 space-mb--20">
@@ -122,7 +156,13 @@ const Checkout = () => {
 
                   <div className="mb-3">
                     <div className="custom_select">
-                      <select className="form-control">
+                      <select
+                        className="form-control"
+                        value={country}
+                        onChange={(event) => {
+                          setCountry(event.target.value);
+                        }}
+                      >
                         <option value="">Select a Country</option>
                         <option value="usa">USA</option>
                       </select>
@@ -205,20 +245,21 @@ const Checkout = () => {
                     ></textarea>
                   </div>
                   <div className="heading-s1 space-mb--20">
-                    <h4>Payment</h4>
+                    <div>
+                      <StripeCheckout
+                        token={handleToken}
+                        stripeKey="pk_live_51OCTX8BBPThbsa5eVtQdO1QO0sJyeUHew8WPtetlVOnBPcuID5phBKhM1SOwuyOXDHvPmRtpEvLdfoS5Rg6u1smx00m0tbF24G"
+                        amount={
+                          cartItems[0].price * cartItems[0].quantity * 100
+                        }
+                        name="BestBackBrace"
+                        email={email}
+                        className="custom-button-stripe"
+                        disabled={!isFormValid}
+                      />
+                    </div>
                     <small>All transactions are secure and encrypted.</small>
                   </div>
-                  <div className="mb-3">
-                    <input
-                      className="form-control"
-                      type="text"
-                      name="cardnumber"
-                      placeholder="cardnumber*"
-                    />
-                  </div>
-                  <button className="btn btn-fill-out btn-block" type="submit">
-                    Place Order
-                  </button>
                 </form>
               </Col>
               <Col md={6}>
@@ -299,25 +340,7 @@ const Checkout = () => {
                 </div>
               </Col>
             </Row>
-          ) : (
-            <Row>
-              <Col>
-                <div className="item-empty-area text-center">
-                  <div className="item-empty-area__icon space-mb--30">
-                    <IoMdCash />
-                  </div>
-                  <div className="item-empty-area__text">
-                    <p className="space-mb--30">
-                      No items found in cart to checkout
-                    </p>
-                    <Link href="/products" className="btn btn-fill-out">
-                      Shop Now
-                    </Link>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          )}
+          )}{" "}
         </Container>
       </div>
     </LayoutFour>
