@@ -1,5 +1,6 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
 import clsx from "clsx";
 import { ProductRating } from "../Product";
 import { addToCart } from "../../store/slices/cart-slice";
@@ -11,6 +12,8 @@ const ProductGridFour = ({
   cartItem,
   bottomSpace,
 }) => {
+  const dispatch = useDispatch();
+
   return (
     <Fragment>
       <div
