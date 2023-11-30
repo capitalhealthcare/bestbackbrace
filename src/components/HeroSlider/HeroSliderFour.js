@@ -41,6 +41,9 @@ const HeroSliderFour = ({ heroSliderData }) => {
                           </h5>
                           <h2 className="space-mb--20 title">{single.title}</h2>
                           <p className="text">{single.text}</p>
+                          <a className="btn btn-white slider-link">
+                            Free Shipping within the USA
+                          </a>
                         </div>
                       </Col>
                     </Row>
