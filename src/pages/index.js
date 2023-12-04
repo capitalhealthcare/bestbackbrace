@@ -7,6 +7,7 @@ import { ProductGridTwo } from "../components/ProductGrid";
 import { BlogGrid } from "../components/Blog";
 import { TestimonialOne } from "../components/Testimonial";
 import { ImageSliderOne } from "../components/ImageSlider";
+import GuideVideo from "../components/GuideVideo";
 
 import imageSliderData from "../data/image-sliders/image-slider-one.json";
 import testimonialOneData from "../data/testimonials/testimonial-one.json";
@@ -18,21 +19,16 @@ const FurnitureTwo = () => {
 
   return (
     <LayoutFour navPositionClass="justify-content-center">
-      {/* hero slider */}
       <HeroSliderFour heroSliderData={heroSliderFourData} />
-      {/* Top Products */}
       <ProductGridTwo
         title="Our Products"
         text="Discover our elite range of back braces, meticulously crafted for unparalleled support. Choose BestBackBrace for comfort that stands the test of time"
         products={bestSellerProducts}
       />
-      {/* image slider */}
       <ImageSliderOne imageSliderData={imageSliderData} />
-      {/* icon box */}
       <IconBoxThree />
-      {/* testimonial */}
       <TestimonialOne testimonialData={testimonialOneData} />
-      {/* blog grid */}
+      <GuideVideo pt={false} pb={true} />
       <BlogGrid />
     </LayoutFour>
   );

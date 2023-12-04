@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaRegMap, FaRegEnvelopeOpen, FaMobileAlt } from "react-icons/fa";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
+import GuideVideo from "../components/GuideVideo";
+
 import api from "../lib/api";
 
 const ContactUs = () => {
@@ -202,6 +204,8 @@ const ContactUs = () => {
           </Container>
         </div>
       </div>
+
+      <GuideVideo />
     </LayoutFour>
   );
 };
