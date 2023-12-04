@@ -4,8 +4,14 @@ import { useDispatch } from "react-redux";
 import ProductModal from "./elements/ProductModal";
 import { ProductRating } from "../Product";
 import { addToCart } from "../../store/slices/cart-slice";
-import { addToWishlist, deleteFromWishlist } from "../../store/slices/wishlist-slice";
-import { addToCompare, deleteFromCompare } from "../../store/slices/compare-slice";
+import {
+  addToWishlist,
+  deleteFromWishlist,
+} from "../../store/slices/wishlist-slice";
+import {
+  addToCompare,
+  deleteFromCompare,
+} from "../../store/slices/compare-slice";
 
 const ProductGridList = ({
   product,
@@ -13,7 +19,7 @@ const ProductGridList = ({
   productPrice,
   cartItem,
   wishlistItem,
-  compareItem
+  compareItem,
 }) => {
   const [modalShow, setModalShow] = useState(false);
   const [colorImage, setColorImage] = useState("");
@@ -24,12 +30,10 @@ const ProductGridList = ({
       <div className="product-grid">
         <div className="product-grid__image">
           <Link href={"/shop/" + product.slug}>
-
             <img
               src={colorImage ? colorImage : product.thumbImage[0]}
               alt="product_img1"
             />
-
           </Link>
           {/* <div className="product-grid__badge-wrapper">
             {product.new ? <span className="pr-flash">NEW</span> : ""}
@@ -52,9 +56,9 @@ const ProductGridList = ({
                     <i className="icon-action-redo" />
                   </a>
                 ) : product.variation && product.variation.length >= 1 ? (
-                  (<Link href={"/shop/" + product.slug}>
+                  <Link href={"/shop/" + product.slug}>
                     <i className="icon-wrench" />
-                  </Link>)
+                  </Link>
                 ) : product.stock && product.stock > 0 ? (
                   <button
                     onClick={() => dispatch(addToCart(product))}
@@ -109,10 +113,9 @@ const ProductGridList = ({
         </div>
         <div className="product-grid__info">
           <h6 className="product-title">
-            <Link href={"/shop/" + product.slug}>
-              {product.name}
-            </Link>
+            <Link href={"/shop/" + product.slug}>{product.name}</Link>
           </h6>
+
           <div className="product-price">
             {product.discount ? (
               <Fragment>
@@ -124,6 +127,7 @@ const ProductGridList = ({
               <span className="price">${productPrice}</span>
             )}
           </div>
+          <h6>Free Shipping within the USA</h6>
           <div className="rating-wrap">
             <ProductRating ratingValue={product.rating} />
             <span className="rating-num">({product.ratingCount})</span>
@@ -138,9 +142,7 @@ const ProductGridList = ({
                       <button
                         style={{ backgroundColor: `${single.colorCode}` }}
                         onClick={() => setColorImage(single.image)}
-                        className={
-                          colorImage === single.image ? "active" : ""
-                        }
+                        className={colorImage === single.image ? "active" : ""}
                       />
                     </li>
                   );
@@ -155,12 +157,10 @@ const ProductGridList = ({
       <div className="product-list">
         <div className="product-list__image">
           <Link href={"/shop/" + product.slug}>
-
             <img
               src={colorImage ? colorImage : product.thumbImage[0]}
               alt="product_img1"
             />
-
           </Link>
           {/* <div className="product-grid__badge-wrapper">
             {product.new ? <span className="pr-flash">NEW</span> : ""}
@@ -178,9 +178,7 @@ const ProductGridList = ({
         </div>
         <div className="product-list__info">
           <h6 className="product-title">
-            <Link href={"/shop/" + product.slug}>
-              {product.name}
-            </Link>
+            <Link href={"/shop/" + product.slug}>{product.name}</Link>
           </h6>
           <div className="d-flex justify-content-between">
             <div className="product-price">
@@ -193,15 +191,15 @@ const ProductGridList = ({
               ) : (
                 <span className="price">${productPrice}</span>
               )}
+              <h6>Free Shipping within the USA</h6>
             </div>
+
             <div className="rating-wrap">
               <ProductRating ratingValue={product.rating} />
               <span className="rating-num">({product.ratingCount})</span>
             </div>
           </div>
-          <div className="product-description">
-            {product.shortDescription}
-          </div>
+          <div className="product-description">{product.shortDescription}</div>
           {product.variation ? (
             <div className="product-switch-wrap">
               <ul>
@@ -211,9 +209,7 @@ const ProductGridList = ({
                       <button
                         style={{ backgroundColor: `${single.colorCode}` }}
                         onClick={() => setColorImage(single.image)}
-                        className={
-                          colorImage === single.image ? "active" : ""
-                        }
+                        className={colorImage === single.image ? "active" : ""}
                       />
                     </li>
                   );
@@ -235,9 +231,13 @@ const ProductGridList = ({
                     <i className="icon-action-redo" /> Buy Now
                   </a>
                 ) : product.variation && product.variation.length >= 1 ? (
-                  (<Link href={"/shop/" + product.slug} className="btn btn-fill-out btn-addtocart">
-                    <i className="icon-wrench" />Select Options
-                  </Link>)
+                  <Link
+                    href={"/shop/" + product.slug}
+                    className="btn btn-fill-out btn-addtocart"
+                  >
+                    <i className="icon-wrench" />
+                    Select Options
+                  </Link>
                 ) : product.stock && product.stock > 0 ? (
                   <button
                     onClick={() => dispatch(addToCart(product))}

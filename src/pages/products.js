@@ -4,6 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import Paginator from "react-hooks-paginator";
 import { LayoutFour } from "../layouts";
 import { ShopHeader, ShopProducts } from "../components/Shop";
+import GuideVideo from "../components/GuideVideo";
 import { getSortedProducts } from "../lib/product";
 import { HeroSliderOne } from "../components/HeroSlider";
 import heroSliderOneData from "../data/hero-sliders/hero-slider-one.json";
@@ -89,6 +90,7 @@ const GridLeftSidebar = () => {
           </Row>
         </Container>
       </div>
+      <GuideVideo pt={false} pb={false} />
     </LayoutFour>
   );
 };

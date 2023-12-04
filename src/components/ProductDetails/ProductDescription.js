@@ -60,7 +60,7 @@ const ProductDescription = ({
               <span className="on-sale">{product.discount}% Off</span>
             </Fragment>
           ) : ( */}
-            <span className="price">${productPrice}</span>
+          <span className="price">${productPrice}</span>
           {/* // )} */}
         </div>
         {product.rating && product.rating > 0 ? (
@@ -74,6 +74,7 @@ const ProductDescription = ({
           ""
         )}
       </div>
+      <h6>Free Shipping within the USA</h6>
       <div className="product-content__description space-mb--20">
         <p>{product.shortDescription}</p>
       </div>
@@ -314,10 +315,7 @@ const ProductDescription = ({
               height: "100%",
             }}
           >
-            <source
-             src="/assets/images/mikeVideo.mp4"
-              type="video/mp4"
-            />
+            <source src="/assets/images/mikeVideo.mp4" type="video/mp4" />
           </video>
         </div>
         {/* <li>

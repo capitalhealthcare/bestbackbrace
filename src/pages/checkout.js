@@ -332,7 +332,7 @@ const Checkout = () => {
                     }}
                   >
                     <source
-                      src="/assets/images/product/fashion/video.mp4"
+                      src="/assets/images/mikeVideo.mp4"
                       type="video/mp4"
                     />
                   </video>
