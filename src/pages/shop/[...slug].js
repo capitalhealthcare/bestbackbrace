@@ -18,21 +18,16 @@ const ProductBasic = ({ product }) => {
 
   return (
     <>
-      <Head>
-        <title>df  dfd fdfdfdf</title>
-        
+      <LayoutFour>
+        <Head>
+          <title>df dfd fdfdfdf</title>
 
-        <meta
-          name="description"
-          content="hassan is hassan"
-        />
-        {/* <meta
+          <meta name="description" content="hassan is hassan" />
+          {/* <meta
           name="keywords"
           content="ecommerce, electronics store, Fashion store, furniture store,  react, next js, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store"
         /> */}
-      </Head>
-
-      <LayoutFour>
+        </Head>
         <HeroSliderOne heroSliderData={heroSliderOneData} />
         {/* product details */}
         <div className="product-details py-5">
