@@ -1,6 +1,4 @@
 import { Fragment, useState } from "react";
-import Head from "next/head";
-
 import Link from "next/link";
 import { getProductCartQuantity } from "../../lib/product";
 import { ProductRating } from "../Product";
@@ -51,17 +49,6 @@ const ProductDescription = ({
     selectedProductSize
   );
   return (
-    <>
-    <Head>
-          <title>df dfd fdfdfdf</title>
-
-          <meta name="description" content="hassan is hassan" />
-          {/* <meta
-          name="keywords"
-          content="ecommerce, electronics store, Fashion store, furniture store,  react, next js, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store"
-        /> */}
-        </Head>
-   
     <div className="product-content">
       <h2 className="product-content__title space-mb--10">{product.name}</h2>
       <div className="product-content__price-rating-wrapper space-mb--10">
@@ -377,7 +364,6 @@ const ProductDescription = ({
         </ul>
       </div> */}
     </div>
-    </>
   );
 };
 

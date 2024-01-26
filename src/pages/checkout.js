@@ -87,7 +87,7 @@ const Checkout = () => {
 
   return (
     <LayoutFour>
-      {loader && <Loader />}
+      {!loader && <Loader />}
       <HeroSliderOne heroSliderData={heroSliderOneData} />
       <div className="checkout-content space-pt--r70 space-pb--r70">
         <Container>
@@ -103,8 +103,8 @@ const Checkout = () => {
                       type="text"
                       required
                       className="form-control"
-                      name="name"
                       placeholder="Full name *"
+                      name="name"
                       value={name}
                       onChange={(e) => {
                         setName(e.target.value);
@@ -115,8 +115,8 @@ const Checkout = () => {
                     <input
                       className="form-control"
                       type="text"
-                      name="company"
                       placeholder="Company Name"
+                      name="company"
                       value={company}
                       onChange={(e) => {
                         setCompany(e.target.value);
@@ -128,8 +128,8 @@ const Checkout = () => {
                       className="form-control"
                       required
                       type="text"
-                      name="email"
                       placeholder="Email address *"
+                      name="email"
                       value={email}
                       onChange={(e) => {
                         setEmail(e.target.value);
@@ -141,8 +141,8 @@ const Checkout = () => {
                       className="form-control"
                       required
                       type="text"
-                      name="phone"
                       placeholder="Phone *"
+                      name="phone"
                       value={phone}
                       onChange={(e) => {
                         setPhone(e.target.value);
