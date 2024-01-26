@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Head from "next/head";
 import { useSelector } from "react-redux";
 import { LayoutFour } from "../../layouts";
 import {
@@ -19,15 +18,7 @@ const ProductBasic = ({ product }) => {
   return (
     <>
       <LayoutFour>
-        <Head>
-          <title>df dfd fdfdfdf</title>
-
-          <meta name="description" content="hassan is hassan" />
-          {/* <meta
-          name="keywords"
-          content="ecommerce, electronics store, Fashion store, furniture store,  react, next js, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store"
-        /> */}
-        </Head>
+        
         <HeroSliderOne heroSliderData={heroSliderOneData} />
         {/* product details */}
         <div className="product-details py-5">
