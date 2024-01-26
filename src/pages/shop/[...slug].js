@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import Head from "next/head";
 import { useSelector } from "react-redux";
 import { LayoutFour } from "../../layouts";
 import {
