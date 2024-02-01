@@ -87,7 +87,7 @@ const Checkout = () => {
 
   return (
     <LayoutFour>
-      {!loader && <Loader />}
+      {loader && <Loader />}
       <HeroSliderOne heroSliderData={heroSliderOneData} />
       <div className="checkout-content space-pt--r70 space-pb--r70">
         <Container>
